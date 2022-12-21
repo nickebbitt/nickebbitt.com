@@ -1,0 +1,6 @@
+baseURL = 'https://nickebbitt.com/'
+languageCode = 'en-uk'
+title = 'My personal site'
+theme = 'terminal'
+[permalinks]
+  posts = '/blog/:year/:month/:day/:title/'
