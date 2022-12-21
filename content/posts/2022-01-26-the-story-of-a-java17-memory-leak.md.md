@@ -1,7 +1,6 @@
 +++
 title = "The story of a Java 17 native memory leak"
 date = "2022-01-26T00:00:00Z"
-draft = true
 +++
 
 ## Context
@@ -42,7 +41,7 @@ As the leak was pretty slow our first attempts with this didn't provide anything
 
 Unsure where to look next I decided to see if anyone in the community was seeing similar issues.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Java?src=hash&amp;ref_src=twsrc%5Etfw">#Java</a> people who are using Java 17 - has anyone noticed a change in their app&#39;s memory usage since you upgraded?<br><br>On some apps we&#39;re seeing slow memory growth/leak. It&#39;s appears to be at the OS/native memory level as the heap is stable, as are the non-heap and direct memory areas <a href="https://t.co/rv5J2Dxdgp">pic.twitter.com/rv5J2Dxdgp</a></p>&mdash; Nick Ebbitt (@nickebbitt) <a href="https://twitter.com/nickebbitt/status/1453284230964912153?ref_src=twsrc%5Etfw">October 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet user="nickebbitt" id="1453284230964912153" >}}
 
 Unfortunately this didn't get much traction.
 
@@ -69,17 +68,18 @@ This was achieved by executing JVM diagnostic commands (the equivalent of those 
 
 Here's a snippet of the kind of thing they got working...
 
-```
+{{< highlight java >}}
 ManagementFactory.getPlatformMBeanServer().invoke(
     new ObjectName("com.sun.management:type=DiagnosticCommand"),
-    "vmNativeMemory,
+    "vmNativeMemory",
     new Object[]{"summary"},
     new String[]{"[Ljava.lang.String;"});
-```
+{{< /highlight >}}
+
 
 The output from this was effectively the same as running `jcmd ${pid} VM.native_memory summary` against a running process from a terminal, for example:
 
-```
+{{< highlight bash >}}
 $ jcmd 1 VM.native_memory summary
 1:
 
@@ -174,7 +174,7 @@ Total: reserved=1530885KB, committed=1079713KB
 
 -                   Unknown (reserved=32KB, committed=32KB)
                             (mmap: reserved=32KB, committed=32KB)
-```
+{{< /highlight >}}
 
 The output was then parsed and transformed into the correct metric format for Prometheus and exposed via a metrics endpoint on the service.
 
@@ -192,18 +192,21 @@ No leak!
 
 This gave us some additional information so I jumped back on Twitter to call for help again...
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">One of our devs worked out that the memory issue with Java 17 goes away when you disable String Deduplication. <br><br>So something changed between Java 11 -&gt; 17 that means with -XX:+UseStringDeduplication we see a slow off-heap memory leak <a href="https://t.co/QWwNRy2rZr">https://t.co/QWwNRy2rZr</a></p>&mdash; Nick Ebbitt (@nickebbitt) <a href="https://twitter.com/nickebbitt/status/1465617649547849733?ref_src=twsrc%5Etfw">November 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet user="nickebbitt" id="1465617649547849733" >}}
 
 ## The bug & the fix
+
 Within 15 minutes of posting the tweet a member of the Java community spotted it and tagged [Aleksey Shipilëv](https://twitter.com/shipilev) who works for Red Hat and is a subject matter expert when it comes to GC on the JVM.
 
 Within a few hours they had [reproduced it and filed a bug report](https://bugs.openjdk.java.net/browse/JDK-8277981), as well [submitted a PR to the Open JDK project](https://github.com/openjdk/jdk/pull/6613) with the fix.
 It turns out it was a simple maths problem.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ha-ha, math problem, whoops. <a href="https://t.co/lKM04DKs77">https://t.co/lKM04DKs77</a></p>&mdash; Aleksey Shipilëv (@shipilev) <a href="https://twitter.com/shipilev/status/1465659474773950467?ref_src=twsrc%5Etfw">November 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet user="shipilev" id="1465659474773950467" >}}
 
 This was awesome!
+
 ## Verification
+
 We were eager to get our hands on the fix however it wouldn't be available in an official release of the JDK until the next patch version, `17.0.2`, which wasn't due until the middle of January.
 
 We decided to verify the fix by creating a Java base Docker image using the nightly builds produced via the `openjdk17u` branch available via Adoptium's [temurin17-binaries](https://github.com/adoptium/temurin17-binaries/releases/tag/jdk-17%2B35) GitHub repo.
@@ -214,7 +217,7 @@ This gave us a way to deploy a version of Java 17 with the fix and provide feedb
 
 This indeed did verify that we were no longer seeing the memory leak.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Deployed a nightly containing the fix for one of the affected workloads, not that there was any doubt but it&#39;s looking good 😀<br><br>You can see multiple 17.0.1 deployments with StringDeduplication on/off, the final one with -XX:+UseStringDeduplication and the fix<br><br>Thanks <a href="https://twitter.com/shipilev?ref_src=twsrc%5Etfw">@shipilev</a> 👏 <a href="https://t.co/GdrhCSv5GM">pic.twitter.com/GdrhCSv5GM</a></p>&mdash; Nick Ebbitt (@nickebbitt) <a href="https://twitter.com/nickebbitt/status/1468157655365607425?ref_src=twsrc%5Etfw">December 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet user="nickebbitt" id="1468157655365607425" >}}
 
 ## The future
 
