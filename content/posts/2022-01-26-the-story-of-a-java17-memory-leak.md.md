@@ -68,14 +68,13 @@ This was achieved by executing JVM diagnostic commands (the equivalent of those 
 
 Here's a snippet of the kind of thing they got working...
 
-{{< highlight java >}}
+```java
 ManagementFactory.getPlatformMBeanServer().invoke(
     new ObjectName("com.sun.management:type=DiagnosticCommand"),
     "vmNativeMemory",
     new Object[]{"summary"},
     new String[]{"[Ljava.lang.String;"});
-{{< /highlight >}}
-
+```
 
 The output from this was effectively the same as running `jcmd ${pid} VM.native_memory summary` against a running process from a terminal, for example:
 
