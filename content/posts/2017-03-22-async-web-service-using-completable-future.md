@@ -1,5 +1,5 @@
 +++
-title = "Asynchronous web service using CompletableFuture"
+title = "Asynchronous web service using Completable Future"
 date = "2017-03-22T00:00:00Z"
 +++
 
