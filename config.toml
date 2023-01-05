@@ -24,6 +24,7 @@ theme = 'terminal'
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
 paginate = 5
+disqusShortname = 'nickebbitt'
 
 [params]
   # dir name of your main content (default is `content/posts`).
