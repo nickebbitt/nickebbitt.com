@@ -3,7 +3,7 @@ title = "A year with the Manchester Java Community"
 date = "2018-01-06T00:00:00Z"
 +++
 
-Following [JCrete]({% post_url 2016-11-29-jcrete-2016 %}) in the summer of 2016 I returned inspired by the people I had met and highly motivated to become more involved
+Following [JCrete]({{< ref 2016-11-29-jcrete-2016 >}}) in the summer of 2016 I returned inspired by the people I had met and highly motivated to become more involved
 in the local tech community. This led me to attend more events such as XP Manchester and the Manchester Java Community (MJC). I also offered to speak at a future MJC event if they would be open to it.
 
 In October 2016 I did my first (and only so far) public [tech talk]({{< ref "/posts/2017-01-01-making-a-mockery-of-web-services" >}}) for the MJC. Following this I caught up with one of the MJC leaders [Alison McGreavy](https://twitter.com/alisonmcgreavy) (who founded the group back in 2013) for some feedback. She provided some useful feedback about my talk and then to my surprise she asked if I'd like to help run the event along with her and [Debbie Roycroft](https://twitter.com/debbieroycroft). At this point I had little idea what it would involve but decided to dive right in and accepted her offer.
