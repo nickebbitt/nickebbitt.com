@@ -87,7 +87,7 @@ This was some attendees first unconference experience so we led by example by pr
 
 ![The Marketplace](marketplace-1.jpg)
 
-We also created 4 spaces where the actual unconference session would happen.
+We also created 4 spaces where the actual unconference sessions would happen.
 One of the spaces already had a name in the Auditorium but for the others we naturally channelled our inner geek and called them Hot Spot, The Heap and Garbage Collection.
 
 ![The Heap](IMG_1807.jpeg)
