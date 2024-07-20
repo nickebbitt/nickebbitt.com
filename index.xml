@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nick Ebbitt</title><link>https://www.nickebbitt.com/</link><description>Recent content on Nick Ebbitt</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nickebbitt.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The story of a Java 17 native memory leak</title><link>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</link><pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</guid><description>Context When Java 17 was released in September we (the platform team at Auto Trader) were fairly quick to provide a new Docker base image to allow our developers to gain the benefits of the new goodness in the JDK available since Java 11, the previous LTS version.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nick Ebbitt</title><link>https://www.nickebbitt.com/</link><description>Recent content on Nick Ebbitt</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nickebbitt.com/index.xml" rel="self" type="application/rss+xml"/><item><title>JManc 2024</title><link>https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/</guid><description>tl;dr Great day, great people, great discussions and great team of dis-organisers!
+Whoever comes are the right people!
+Thanks to all who attended, it&amp;rsquo;s down to each and every one of you that JManc Unconference 2024 was a success!
+See you next year! 😀
+intro In January this year we decided to test the interest of the Manchester Java Community on whether they were up for another edition of the JManc Unconference.</description><content>&lt;h2 id="tldr">tl;dr&lt;/h2>
+&lt;p>Great day, great people, great discussions and great team of &lt;em>dis-organisers&lt;/em>!&lt;/p>
+&lt;blockquote>
+&lt;p>Whoever comes are the right people!&lt;/p>
+&lt;/blockquote>
+&lt;p>Thanks to all who attended, it&amp;rsquo;s down to each and every one of you that JManc Unconference 2024 was a success!&lt;/p>
+&lt;p>See you next year! 😀&lt;/p>
+&lt;h2 id="intro">intro&lt;/h2>
+&lt;p>In January this year we decided to test the interest of the Manchester Java Community on whether they were up for another edition of the &lt;a href="https://jmanc.org">JManc Unconference&lt;/a>.
+We sent out a survey to our members and from the responses received there was unanimous support for to us to run it again.
+This gave &lt;a href="https://www.linkedin.com/in/jsbullock/">Jon Bullock&lt;/a>, &lt;a href="https://www.linkedin.com/in/david-underwood-6b929858/">Dave Underwood&lt;/a> and I the motivation we needed to put plans into motion for the 3rd edition of JManc Unconference!&lt;/p>
+&lt;p>&lt;img alt="JManc 2024" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/jmanc-2024.png">&lt;/p>
+&lt;h2 id="planning">planning&lt;/h2>
+&lt;p>We had a few key decisions to make to get things started including where and when we would hold the unconference.&lt;/p>
+&lt;p>In previous years we&amp;rsquo;d hosted the event at &lt;a href="https://careers.autotrader.co.uk">Auto Trader&amp;rsquo;s&lt;/a> offices in Manchester city centre which had worked really well and we were keen to explore if this would be possible again.
+We have a great relationship with Auto Trader at the MJC so we proposed the idea to &lt;a href="https://www.linkedin.com/in/claireisherwood/">Claire Isherwood&lt;/a> and she was very enthusiastic.
+Within a few days we were able to confirm Auto Trader as the venue and just needed to pin down a date.&lt;/p>
+&lt;p>We had a rough timing in mind of June, similar to previous years, however we were unsure whether to go with a Saturday as in previous years or to switch to a weekday.
+In the end we chose to go with a weekday and landed on Friday 28th June to run the event.
+Our thoughts were that running JManc on a weekday would be more appealing to a wider range of people by allowing them to treat it like a training day from work, and also to avoid a conflict with people&amp;rsquo;s precious weekends.&lt;/p>
+&lt;p>Another key decision came down to whether we would charge people to attend or not.
+We strongly believe in keeping the cost down for attendees to us ensuring that the event is as accessible as possible to all who might want to attend.
+The challenge with events that are free is that the actual numbers for people attending on the day can be quite unpredictable.
+Through running normal meetups over the years, and from previous JMancs, we have a rough rule of thumb that around 40% of people registered will not actually turn up to a free event.&lt;/p>
+&lt;p>With this in mind we decided to release 70 tickets with the hope that 40 or so of them would turn up on the day.
+If 70 people did turn up on the day then it wouldn&amp;rsquo;t have been a problem, maybe just a little more chaotic that we&amp;rsquo;d been planning for 😬&lt;/p>
+&lt;p>One part of JManc that&amp;rsquo;s a little unconventional for an unconference is to have a keynote speaker.
+With a carefully chosen speaker we believe it adds a little more value for the attendees.
+This year we invited &lt;a href="https://www.helenjoscott.com">Helen Scott&lt;/a> from JetBrains to join us which she enthusiastically accepted.
+Huge thanks to Helen for offering her time to help JManc be a success.&lt;/p>
+&lt;p>&lt;img alt="Helen Scott" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/helenscott.jpg">&lt;/p>
+&lt;p>The last aspect we had to consider that&amp;rsquo;s been really successful in previous years was the evening social.
+The social provides a great way to relax and reflect following an intense day of discussions.
+We were delighted to partner with &lt;a href="https://www.interquestgroup.com/brands/ecom/about-us">ECOM Recruitment&lt;/a> on this with them agreeing to sponsor the social by putting some cash behind the bar at &lt;a href="https://homemcr.org">Home&lt;/a> to cover a few drinks and nibbles for everyone.&lt;/p>
+&lt;p>After all the planning it then boils down to promotion!
+With the help of our partners and friends of the MJC (such as the &lt;a href="https://junconf.org">JUnconference Alliance&lt;/a>, &lt;a href="https://www.reframe-wit.com">ReframeIT&lt;/a> and &lt;a href="https://foojay.io">Foojay&lt;/a>) we started to spread the word with the hope reaching a diverse range of people who might be interested in attending an event such as this.&lt;/p>
+&lt;p>&lt;img alt="JManc Promo" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/jmanc-promo.jpeg">&lt;/p>
+&lt;p>Something that&amp;rsquo;s really important for us as organisers is to keep things simple but there&amp;rsquo;s an essential level of complexity that comes with running an event like this.
+Huge thanks to &lt;a href="https://www.linkedin.com/in/claireisherwood/">Claire Isherwood&lt;/a> (and team at Auto Trader), &lt;a href="https://www.linkedin.com/in/garethpike/">Gareth Pike&lt;/a> and &lt;a href="https://www.linkedin.com/in/robertsugden/">Rob Sugden&lt;/a> for helping manage this complexity and reducing the stress during the run up to the day.&lt;/p>
+&lt;h2 id="the-day">the day&lt;/h2>
+&lt;p>&lt;img alt="Welcome" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/welcome.jpg">&lt;/p>
+&lt;p>Our predictions on the number of attendees were pretty much spot on with just under 40 people attending.
+My main concern with the attendee drop-off rate comes down to waste.
+The last thing we wanted it was for Auto Trader to plan catering for 70 people and the only half of that number turn up.
+Fortunately we were able to confirm the exact numbers to the catering team at Auto Trader on the morning of the conference so this wasn&amp;rsquo;t a problem.&lt;/p>
+&lt;p>We only really had full access to the event space on the morning of the conference however we visited a few weeks earlier to make a rough plan for how we&amp;rsquo;d make best use of it.
+This meant the organising team arriving early to put the plan into action.&lt;/p>
+&lt;h3 id="the-marketplace--discussion-spaces">the marketplace &amp;amp; discussion spaces&lt;/h3>
+&lt;p>We created a main space where attendees would congregate on arrival for coffee and pastries.
+This space was also where we created &amp;ldquo;The Marketplace&amp;rdquo;, a key area for the unconference where attendees could propose their topic ideas, vote on their favourites and we could create the schedule.
+Throughout the day attendees revisited The Marketplace to connect with others, propose new topics and choose their next sessions.&lt;/p>
+&lt;p>&lt;img alt="The Marketplace" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/marketplace-0.jpeg">&lt;/p>
+&lt;p>On attendees arriving the first role of the &lt;em>&amp;ldquo;dis-organisers&amp;rdquo;&lt;/em> was to get the new arrivals straight into the mindset of an unconference and thinking about what they would either like to share or learn about.
+This was some attendees first unconference experience so we led by example by proposing some topics for discussion and encouraged others to do the same.&lt;/p>
+&lt;p>&lt;img alt="The Marketplace" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/marketplace-1.jpg">&lt;/p>
+&lt;p>We also created 4 spaces where the actual unconference session would happen.
+One of the spaces already had a name in the Auditorium but for the others we naturally channelled our inner geek and called them Hot Spot, The Heap and Garbage Collection.&lt;/p>
+&lt;p>&lt;img alt="The Heap" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/IMG_1807.jpeg">&lt;/p>
+&lt;p>Immediately before the keynote we did our first round of dot voting on the topics proposed so far.
+This approach ensures that it&amp;rsquo;s the attendees who democratically decide the schedule for the day.&lt;/p>
+&lt;p>&lt;img alt="dot voting" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/JMac_2023-018.jpg">&lt;/p>
+&lt;h3 id="keynote">keynote&lt;/h3>
+&lt;p>The Auditorium also provided the perfect setting for our keynote session.
+Following a brief but essential intro to JManc from the organisers we handed over to Helen.&lt;/p>
+&lt;p>&lt;img alt="auditorium" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/auditorium.jpg">&lt;/p>
+&lt;p>The dis-organisers first gave a brief intro JManc and set the scene for how we were hoping the day would go.&lt;/p>
+&lt;p>&lt;img alt="intro" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/JMac_2023-039.jpg">&lt;/p>
+&lt;p>Helen then took attendees on a tour of AI, tooling and ways of working covering some of the history and then focusing in on the practical reality of AI today and some predictions for the future.&lt;/p>
+&lt;p>&lt;img alt="keynote" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/JMac_2023-051.jpg">&lt;/p>
+&lt;p>Unfortunately for myself, Jon and Dave we had to the leave the keynote half way through to go and create the morning schedule out the sessions that had been voted on.
+This part is easier said than done with their often being various competing topics that are highly voted.&lt;/p>
+&lt;h3 id="the-schedule">the schedule&lt;/h3>
+&lt;p>As an attendee, the nature of any conference is that, unless it&amp;rsquo;s single track, you are more than likely going to have a clash between multiple sessions with topics you are interested in happening at the same time.
+We tried our best to avoid clashes between the most popular topics and I hope we managed to make most people happy.&lt;/p>
+&lt;p>&lt;img alt="schedule" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/schedule.jpeg">&lt;/p>
+&lt;p>Based on the actual number of people on the day we decided to stick with 3 tracks using the Auditorium for the most popular session in each slot.&lt;/p>
+&lt;p>Following the keynote and a short break we kicked off the unconference style sessions.&lt;/p>
+&lt;p>&lt;img alt="GC Session" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/JMac_2023-091.jpg">&lt;/p>
+&lt;p>&lt;img alt="GC Session" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/JMac_2023-110.jpg">&lt;/p>
+&lt;p>&lt;img alt="Auditorium Session" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/JMac_2023-117.jpg">&lt;/p>
+&lt;p>The sessions on the day covered a wide variety of topics such as:&lt;/p>
+&lt;ul>
+&lt;li>AI and its various applications in software engineering (obviously)&lt;/li>
+&lt;li>Chaos Engineering / Fault Injection with Istio service mesh&lt;/li>
+&lt;li>Java in Containers&lt;/li>
+&lt;li>Network Micro-segmentation on Kubernetes&lt;/li>
+&lt;li>the latest Java language features and developments&lt;/li>
+&lt;li>JVM architecture&lt;/li>
+&lt;li>other JVM languages&lt;/li>
+&lt;li>Java &amp;amp; serverless&lt;/li>
+&lt;li>embedded Java&lt;/li>
+&lt;li>modern testing practices&lt;/li>
+&lt;li>ways or working handling distractions, how to focus, teams/slack etiquette&lt;/li>
+&lt;/ul>
+&lt;p>As you can see this is a diverse range of content, and not all Java/JVM specific.&lt;/p>
+&lt;p>&lt;img alt="session-01" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/session-01.jpeg">&lt;/p>
+&lt;p>&lt;img alt="session-02" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/session-02.jpeg">&lt;/p>
+&lt;p>&lt;img alt="session-03" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/session-03.jpeg">&lt;/p>
+&lt;h3 id="evening-social">evening social&lt;/h3>
+&lt;p>The day was super busy and was over before we knew it and the evening social provides the ideal way to relax and reflect.
+ECOM provided the food and drinks and around half the attendees hung around to continue the conversations and begin new ones.&lt;/p>
+&lt;h2 id="retro">retro&lt;/h2>
+&lt;p>In previous years we&amp;rsquo;ve ran a more structured retro session which has been a really nice touch however this year we kept it simple and just asked for feedback on post-its as people left at the end.
+I think this worked well, and thankfully almost 100% of feedback was positive.&lt;/p>
+&lt;p>&lt;img alt="feedback" src="https://www.nickebbitt.com/blog/2024/06/30/jmanc-2024/feedback.jpeg">&lt;/p>
+&lt;p>The organising group of JManc plan to run a retro in the coming weeks to review what worked and what didn&amp;rsquo;t across all aspects.
+A few things that come to mind for me that will feed into this are:&lt;/p>
+&lt;ul>
+&lt;li>how can improve the diversity of JManc?&lt;/li>
+&lt;li>with Manchester having great universities how we can connect with them to encourage greater attendance from that demographic?&lt;/li>
+&lt;li>how can we attract more Java experts to JManc? We have many connections with people from communities like Foojay and Java User Groups (JUGs) across the world and it would be awesome to tap into those and see some Java SMEs in attendance next year.&lt;/li>
+&lt;li>is a single day unconference enough?&lt;/li>
+&lt;/ul>
+&lt;h2 id="future">future&lt;/h2>
+&lt;p>Apologies for such a long post but this is has been a great way for me to reflect on this year&amp;rsquo;s JManc and really think about the whole process from idea to execution.
+I&amp;rsquo;m delighted that it went well and it&amp;rsquo;s really been a pleasure collaborating with the MJC leadership and our sponsors to make it a success.&lt;/p>
+&lt;p>The positive experience definitely leaves me motivated to run JManc again in 2025 and I&amp;rsquo;m hoping the rest of the team feel the same, I&amp;rsquo;m fairly confident they do.&lt;/p>
+&lt;p>I think the format we use for JManc works really well and I don&amp;rsquo;t feel there&amp;rsquo;s a need to change it.
+However, having experienced unconferences such as &lt;a href="https://www.nickebbitt.com/blog/2016/11/29/jcrete-2016/">JCrete&lt;/a> and &lt;a href="https://www.nickebbitt.com/blog/2019/06/07/jalba-2019/">JAlba&lt;/a> I&amp;rsquo;d love to explore whether a multi-day unconference in Manchester could work.&lt;/p>
+&lt;p>With that thought I&amp;rsquo;ll leave it here.
+Hopefully we&amp;rsquo;ll see you all again next year!&lt;/p></content></item><item><title>Structure logging in Java</title><link>https://www.nickebbitt.com/blog/2024/01/11/structure-logging-in-java/</link><pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2024/01/11/structure-logging-in-java/</guid><description>Key takeaways:
+why structured logging? options slf4j and logback what else?</description><content>&lt;p>Key takeaways:&lt;/p>
+&lt;ul>
+&lt;li>why structured logging?&lt;/li>
+&lt;li>options&lt;/li>
+&lt;li>slf4j and logback&lt;/li>
+&lt;li>what else?&lt;/li>
+&lt;/ul></content></item><item><title>The story of a Java 17 native memory leak</title><link>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</link><pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</guid><description>Context When Java 17 was released in September we (the platform team at Auto Trader) were fairly quick to provide a new Docker base image to allow our developers to gain the benefits of the new goodness in the JDK available since Java 11, the previous LTS version.
 Over the course of a few years we&amp;rsquo;ve standardised the way the JVM is configured out of the box for any new applications that make use of the base image.</description><content>&lt;h2 id="context">Context&lt;/h2>
 &lt;p>When Java 17 was released in September we (the platform team at &lt;a href="https://careers.autotrader.co.uk">Auto Trader&lt;/a>) were fairly quick to provide a new Docker base image to allow our developers to gain the benefits of the new goodness in the JDK available since Java 11, the previous LTS version.&lt;/p>
 &lt;p>Over the course of a few years we&amp;rsquo;ve standardised the way the JVM is configured out of the box for any new applications that make use of the base image.
@@ -1304,7 +1435,8 @@ asynchronous computation steps.&lt;/p>
 &lt;/blockquote>
 &lt;p>I&amp;rsquo;m not going to go into detail about &lt;code>CompletableFuture&lt;/code> however the following video from Tomasz Nurkiewicz provides a great primer for understanding what it offers.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/-MBPQ7NIL_Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/-MBPQ7NIL_Y?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+>&lt;/iframe>
 &lt;/div>
 &lt;!-- raw HTML omitted -->
 &lt;p>What I&amp;rsquo;m specifically interested in is how we can use &lt;code>CompletableFuture&lt;/code> in combination with a Spring &lt;a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html">&lt;code>@RestController&lt;/code>&lt;/a> to implement HTTP endpoints that handle requests asynchronously.&lt;/p>
@@ -1623,7 +1755,15 @@ I love writing code with core strengths in Java but experience of a variety of o
 &lt;p>Quality of software is very important to me. I utilise suitable tools &amp;amp; techniques to implement various flavours of tests. I believe that testing is a core part of the developers role and should be valued highly.&lt;/p>
 &lt;p>The latest technologies and techniques for delivering software excite me. At the same time I respect existing software systems, the challenges they present and the value they provide to a business.&lt;/p>
 &lt;p>I view team culture as a key element to successful software delivery. I make it a responsibility of mine to help to nurture a positive team environment where safety, quality and continuous improvement are highly valued.&lt;/p>
-&lt;p>This site hosts my &lt;a href="https://www.nickebbitt.com/posts/" title="development blog">development blog&lt;/a> and general info about things I&amp;rsquo;m up to in relation to software development.&lt;/p></content></item><item><title>Contact</title><link>https://www.nickebbitt.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/contact/</guid><description>You can get in touch with or find me at:
+&lt;p>This site hosts my &lt;a href="https://www.nickebbitt.com/posts/" title="development blog">development blog&lt;/a> and general info about things I&amp;rsquo;m up to in relation to software development.&lt;/p></content></item><item><title>CIDR by example</title><link>https://www.nickebbitt.com/blog/1/01/01/cidr-by-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/1/01/01/cidr-by-example/</guid><description>Key takeaways:
+what is CIDR? IPv4 subnet mask single IP /24 range</description><content>&lt;p>Key takeaways:&lt;/p>
+&lt;ul>
+&lt;li>what is CIDR?&lt;/li>
+&lt;li>IPv4&lt;/li>
+&lt;li>subnet mask&lt;/li>
+&lt;li>single IP&lt;/li>
+&lt;li>/24 range&lt;/li>
+&lt;/ul></content></item><item><title>Contact</title><link>https://www.nickebbitt.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/contact/</guid><description>You can get in touch with or find me at:
 GitHub Twitter LinkedIn</description><content>&lt;p>You can get in touch with or find me at:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/nickebbitt">GitHub&lt;/a>&lt;/li>
