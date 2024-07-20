@@ -100,7 +100,6 @@ This approach ensures that it's the attendees who democratically decide the sche
 ### keynote
 
 The Auditorium also provided the perfect setting for our keynote session.
-Following a brief but essential intro to JManc from the organisers we handed over to Helen.
 
 ![auditorium](auditorium.jpg)
 
