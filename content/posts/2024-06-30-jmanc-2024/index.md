@@ -107,12 +107,12 @@ The dis-organisers first gave a brief intro JManc and set the scene for how we w
 
 ![intro](JMac_2023-039.jpg)
 
-Helen then took attendees on a tour of AI, tooling and ways of working covering some of the history and then focusing in on the practical reality of AI today and some predictions for the future.
+Helen then took attendees on a tour of AI, tooling and ways of working covering some of the history and then focusing in on the practical reality of AI today with some predictions for the future.
 
 ![keynote](JMac_2023-051.jpg)
 
 Unfortunately for myself, Jon and Dave we had to the leave the keynote half way through to go and create the morning schedule out the sessions that had been voted on.
-This part is easier said than done with their often being various competing topics that are highly voted.
+This part is easier said than done with there often being various competing topics that are highly voted.
 
 ### the schedule
 
