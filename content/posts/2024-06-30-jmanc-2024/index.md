@@ -1,6 +1,6 @@
 +++
 title = "JManc 2024"
-date = "2024-06-30T00:00:00Z"
+date = "2024-07-20T00:00:00Z"
 Toc = true
 TocTitle = "contents"
 +++
