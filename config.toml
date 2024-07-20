@@ -19,6 +19,10 @@ theme = 'terminal'
     noHl = false
     style = 'monokai'
     tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
@@ -32,7 +36,7 @@ disqusShortname = 'nickebbitt'
   contentTypeName = "posts"
 
   # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
+  themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 3
@@ -65,7 +69,7 @@ disqusShortname = 'nickebbitt'
   # oneHeadingSize = true # default
 
   # whether to show a page's estimated reading time
-  # readingTime = false # default
+   readingTime = true # default
 
   # whether to show a table of contents
   # can be overridden in a page's front-matter
