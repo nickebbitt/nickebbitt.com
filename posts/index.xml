@@ -121,14 +121,7 @@ I&amp;rsquo;m delighted that it went well and it&amp;rsquo;s really been a pleas
 &lt;p>I think the format we use for JManc works really well and I don&amp;rsquo;t feel there&amp;rsquo;s a need to change it.
 However, having experienced unconferences such as &lt;a href="https://www.nickebbitt.com/blog/2016/11/29/jcrete-2016/">JCrete&lt;/a> and &lt;a href="https://www.nickebbitt.com/blog/2019/06/07/jalba-2019/">JAlba&lt;/a>, I&amp;rsquo;d love to explore whether a multi-day unconference in Manchester could work.&lt;/p>
 &lt;p>With that thought I&amp;rsquo;ll leave it here.
-Hopefully we&amp;rsquo;ll see you all again next year!&lt;/p></content></item><item><title>Structure logging in Java</title><link>https://www.nickebbitt.com/blog/2024/01/11/structure-logging-in-java/</link><pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2024/01/11/structure-logging-in-java/</guid><description>Key takeaways:
-why structured logging? options slf4j and logback what else?</description><content>&lt;p>Key takeaways:&lt;/p>
-&lt;ul>
-&lt;li>why structured logging?&lt;/li>
-&lt;li>options&lt;/li>
-&lt;li>slf4j and logback&lt;/li>
-&lt;li>what else?&lt;/li>
-&lt;/ul></content></item><item><title>The story of a Java 17 native memory leak</title><link>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</link><pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</guid><description>Context When Java 17 was released in September we (the platform team at Auto Trader) were fairly quick to provide a new Docker base image to allow our developers to gain the benefits of the new goodness in the JDK available since Java 11, the previous LTS version.
+Hopefully we&amp;rsquo;ll see you all again next year!&lt;/p></content></item><item><title>The story of a Java 17 native memory leak</title><link>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</link><pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2022/01/26/the-story-of-a-java-17-native-memory-leak/</guid><description>Context When Java 17 was released in September we (the platform team at Auto Trader) were fairly quick to provide a new Docker base image to allow our developers to gain the benefits of the new goodness in the JDK available since Java 11, the previous LTS version.
 Over the course of a few years we&amp;rsquo;ve standardised the way the JVM is configured out of the box for any new applications that make use of the base image.</description><content>&lt;h2 id="context">Context&lt;/h2>
 &lt;p>When Java 17 was released in September we (the platform team at &lt;a href="https://careers.autotrader.co.uk">Auto Trader&lt;/a>) were fairly quick to provide a new Docker base image to allow our developers to gain the benefits of the new goodness in the JDK available since Java 11, the previous LTS version.&lt;/p>
 &lt;p>Over the course of a few years we&amp;rsquo;ve standardised the way the JVM is configured out of the box for any new applications that make use of the base image.
@@ -1744,12 +1737,4 @@ SpringBoot version: 1.4.0-RELEASE</description><content>&lt;p>If you&amp;rsquo;r
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>server.&lt;span style="color:#a6e22e">tomcat&lt;/span>.&lt;span style="color:#a6e22e">basedir&lt;/span>&lt;span style="color:#f92672">=&lt;/span>tomcat&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>Alternatively, the property values can be passed as command line options.&lt;/p>
 &lt;p>The result will be a new directory called tomcat at the same level as the JAR under which your logs will be created.&lt;/p>
-&lt;p>SpringBoot version: &lt;code>1.4.0-RELEASE&lt;/code>&lt;/p></content></item><item><title>CIDR by example</title><link>https://www.nickebbitt.com/blog/1/01/01/cidr-by-example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/1/01/01/cidr-by-example/</guid><description>Key takeaways:
-what is CIDR? IPv4 subnet mask single IP /24 range</description><content>&lt;p>Key takeaways:&lt;/p>
-&lt;ul>
-&lt;li>what is CIDR?&lt;/li>
-&lt;li>IPv4&lt;/li>
-&lt;li>subnet mask&lt;/li>
-&lt;li>single IP&lt;/li>
-&lt;li>/24 range&lt;/li>
-&lt;/ul></content></item></channel></rss>
+&lt;p>SpringBoot version: &lt;code>1.4.0-RELEASE&lt;/code>&lt;/p></content></item></channel></rss>
