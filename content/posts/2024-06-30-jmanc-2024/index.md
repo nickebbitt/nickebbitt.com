@@ -168,7 +168,7 @@ I think this worked well, and thankfully almost 100% of feedback was positive.
 The organising group of JManc plan to run a retro in the coming weeks to review what worked and what didn't across all aspects.
 A few things that come to mind for me that will feed into this are:
 
-- how can improve the diversity of JManc?
+- how can we improve the diversity of JManc?
 - with Manchester having great universities how we can connect with them to encourage greater attendance from that demographic?
 - how can we attract more Java experts to JManc? We have many connections with people from communities like Foojay and Java User Groups (JUGs) across the world and it would be awesome to tap into those and see some Java SMEs in attendance next year.
 - is a single day unconference enough?
@@ -181,7 +181,7 @@ I'm delighted that it went well and it's really been a pleasure collaborating wi
 The positive experience definitely leaves me motivated to run JManc again in 2025 and I'm hoping the rest of the team feel the same, I'm fairly confident they do.
 
 I think the format we use for JManc works really well and I don't feel there's a need to change it.
-However, having experienced unconferences such as [JCrete](../2016-11-29-jcrete-2016/index.md) and [JAlba](../2019-06-07-jalba-2019/index.md) I'd love to explore whether a multi-day unconference in Manchester could work.
+However, having experienced unconferences such as [JCrete](../2016-11-29-jcrete-2016/index.md) and [JAlba](../2019-06-07-jalba-2019/index.md), I'd love to explore whether a multi-day unconference in Manchester could work.
 
 With that thought I'll leave it here.
 Hopefully we'll see you all again next year!
