@@ -109,7 +109,7 @@ I think this worked well, and thankfully almost 100% of feedback was positive.&l
 &lt;p>The organising group of JManc plan to run a retro in the coming weeks to review what worked and what didn&amp;rsquo;t across all aspects.
 A few things that come to mind for me that will feed into this are:&lt;/p>
 &lt;ul>
-&lt;li>how can improve the diversity of JManc?&lt;/li>
+&lt;li>how can we improve the diversity of JManc?&lt;/li>
 &lt;li>with Manchester having great universities how we can connect with them to encourage greater attendance from that demographic?&lt;/li>
 &lt;li>how can we attract more Java experts to JManc? We have many connections with people from communities like Foojay and Java User Groups (JUGs) across the world and it would be awesome to tap into those and see some Java SMEs in attendance next year.&lt;/li>
 &lt;li>is a single day unconference enough?&lt;/li>
@@ -119,7 +119,7 @@ A few things that come to mind for me that will feed into this are:&lt;/p>
 I&amp;rsquo;m delighted that it went well and it&amp;rsquo;s really been a pleasure collaborating with the MJC leadership and our sponsors to make it a success.&lt;/p>
 &lt;p>The positive experience definitely leaves me motivated to run JManc again in 2025 and I&amp;rsquo;m hoping the rest of the team feel the same, I&amp;rsquo;m fairly confident they do.&lt;/p>
 &lt;p>I think the format we use for JManc works really well and I don&amp;rsquo;t feel there&amp;rsquo;s a need to change it.
-However, having experienced unconferences such as &lt;a href="https://www.nickebbitt.com/blog/2016/11/29/jcrete-2016/">JCrete&lt;/a> and &lt;a href="https://www.nickebbitt.com/blog/2019/06/07/jalba-2019/">JAlba&lt;/a> I&amp;rsquo;d love to explore whether a multi-day unconference in Manchester could work.&lt;/p>
+However, having experienced unconferences such as &lt;a href="https://www.nickebbitt.com/blog/2016/11/29/jcrete-2016/">JCrete&lt;/a> and &lt;a href="https://www.nickebbitt.com/blog/2019/06/07/jalba-2019/">JAlba&lt;/a>, I&amp;rsquo;d love to explore whether a multi-day unconference in Manchester could work.&lt;/p>
 &lt;p>With that thought I&amp;rsquo;ll leave it here.
 Hopefully we&amp;rsquo;ll see you all again next year!&lt;/p></content></item><item><title>Structure logging in Java</title><link>https://www.nickebbitt.com/blog/2024/01/11/structure-logging-in-java/</link><pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.nickebbitt.com/blog/2024/01/11/structure-logging-in-java/</guid><description>Key takeaways:
 why structured logging? options slf4j and logback what else?</description><content>&lt;p>Key takeaways:&lt;/p>
