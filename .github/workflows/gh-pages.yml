@@ -21,6 +21,23 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/OldRivs/package-lock.json
+
+      - name: Build OldRivs
+        working-directory: apps/OldRivs
+        run: |
+          npm ci
+          npm run publish:local-data
+          npm run build
+
+      - name: Copy OldRivs assets
+        run: mkdir -p static/oldrivs && cp -R apps/OldRivs/dist/. static/oldrivs/
+
       - name: Build
         run: hugo --minify
 

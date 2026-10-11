@@ -120,3 +120,7 @@ disqusShortname = 'nickebbitt'
         identifier = "about"
         name = "About"
         url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "oldrivs"
+        name = "OldRivs"
+        url = "/oldrivs/"

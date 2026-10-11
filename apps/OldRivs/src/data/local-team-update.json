@@ -1,0 +1,548 @@
+{
+  "team": {
+    "displayName": "Old Rivingtonians Football Club Under 13s",
+    "sourceTeamReference": "Old Rivingtonians Under 13s"
+  },
+  "matches": [
+    {
+      "matchId": "result-moss-bank",
+      "scheduledAt": "2026-09-05T09:00:00.000Z",
+      "completedAt": "2026-09-05",
+      "opponent": "Moss Bank Junior U13 Yellows",
+      "homeAway": "home",
+      "status": "confirmed",
+      "teamScore": 4,
+      "opponentScore": 2,
+      "contributions": [
+        {
+          "scorer": "Jake",
+          "detail": "off the keeper"
+        },
+        {
+          "scorer": "Own goal"
+        },
+        {
+          "scorer": "George",
+          "assist": "Hamish"
+        },
+        {
+          "scorer": "Jimi",
+          "assist": "George"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Hamish",
+      "parentsPlayersOfTheMatch": [
+        "Reuben"
+      ]
+    },
+    {
+      "matchId": "result-at-eagles",
+      "scheduledAt": "2026-09-12T09:00:00.000Z",
+      "completedAt": "2026-09-12",
+      "opponent": "Astley & Tyldesley J.F.C. U13 Eagles",
+      "homeAway": "home",
+      "status": "confirmed",
+      "teamScore": 1,
+      "opponentScore": 3,
+      "contributions": [
+        {
+          "scorer": "George"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Archie W",
+      "parentsPlayersOfTheMatch": [
+        "George"
+      ]
+    },
+    {
+      "matchId": "result-crompton",
+      "scheduledAt": "2026-09-19T09:00:00.000Z",
+      "completedAt": "2026-09-19",
+      "opponent": "Crompton FC Academy U13 Crompton Juniors",
+      "homeAway": "home",
+      "status": "confirmed",
+      "teamScore": 4,
+      "opponentScore": 3,
+      "contributions": [
+        {
+          "scorer": "Louie"
+        },
+        {
+          "scorer": "Louie"
+        },
+        {
+          "scorer": "Archie"
+        },
+        {
+          "scorer": "Kaydon",
+          "assist": "George"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Archie W",
+      "parentsPlayersOfTheMatch": [
+        "Louie"
+      ]
+    },
+    {
+      "matchId": "result-bolton-w",
+      "scheduledAt": "2026-09-26T09:00:00.000Z",
+      "completedAt": "2026-09-26",
+      "opponent": "Bolton Wyresdale U13 Bolton Wyresdale AF",
+      "homeAway": "home",
+      "status": "confirmed",
+      "teamScore": 9,
+      "opponentScore": 0,
+      "contributions": [
+        {
+          "scorer": "Kaydon",
+          "assist": "Jimi"
+        },
+        {
+          "scorer": "Hamish",
+          "assist": "Luca"
+        },
+        {
+          "scorer": "Louie",
+          "assist": "Theo"
+        },
+        {
+          "scorer": "Archie",
+          "detail": "off the keeper"
+        },
+        {
+          "scorer": "George"
+        },
+        {
+          "scorer": "Archie W",
+          "assist": "Archie"
+        },
+        {
+          "scorer": "Archie W"
+        },
+        {
+          "scorer": "Jake",
+          "assist": "Archie"
+        },
+        {
+          "scorer": "Archie",
+          "assist": "Hamish"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Luca, Archie",
+      "parentsPlayersOfTheMatch": [
+        "Jimi"
+      ]
+    },
+    {
+      "matchId": "result-oxford-grove",
+      "scheduledAt": "2026-10-03T09:00:00.000Z",
+      "completedAt": "2026-10-03",
+      "opponent": "Oxford Grove Junior U13 Tigers",
+      "homeAway": "home",
+      "status": "confirmed",
+      "teamScore": 5,
+      "opponentScore": 2,
+      "contributions": [
+        {
+          "scorer": "Theo",
+          "assist": "Hamish"
+        },
+        {
+          "scorer": "Louie",
+          "assist": "George"
+        },
+        {
+          "scorer": "Kaydon",
+          "detail": "penalty"
+        },
+        {
+          "scorer": "Theo",
+          "detail": "free kick"
+        },
+        {
+          "scorer": "Own goal",
+          "assist": "George"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Theo",
+      "parentsPlayersOfTheMatch": [
+        "George"
+      ]
+    },
+    {
+      "matchId": "fixture-abraham-moss-2026-10-10",
+      "scheduledAt": "2026-10-10T09:00:00.000Z",
+      "opponent": "Abraham Moss Warriors U13 Abraham Moss W",
+      "homeAway": "away",
+      "status": "postponed",
+      "venue": "Abraham Moss Warriors U13 Abraham Moss W",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-tiki-taka-2026-10-10",
+      "scheduledAt": "2026-10-10T09:00:00.000Z",
+      "opponent": "Tiki Taka U13 Leverkusen",
+      "homeAway": "away",
+      "status": "confirmed",
+      "venue": "Tiki Taka U11 Leverkusen",
+      "competition": "U13s Players Cup",
+      "completedAt": "2026-10-10",
+      "teamScore": 6,
+      "opponentScore": 1,
+      "contributions": [
+        {
+          "scorer": "Louie",
+          "assist": "George"
+        },
+        {
+          "scorer": "George",
+          "assist": "Louie"
+        },
+        {
+          "scorer": "Reuben"
+        },
+        {
+          "scorer": "Louie",
+          "assist": "Jimi"
+        },
+        {
+          "scorer": "Kaydon",
+          "assist": "Jake"
+        },
+        {
+          "scorer": "Kaydon",
+          "assist": "Reuben"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Bailey",
+      "parentsPlayersOfTheMatch": [
+        "Reuben",
+        "George"
+      ]
+    },
+    {
+      "matchId": "fixture-hindley-2026-10-17",
+      "scheduledAt": "2026-10-17T09:00:00.000Z",
+      "opponent": "Hindley Town U13 Barbarians",
+      "homeAway": "home",
+      "status": "scheduled",
+      "venue": "Old Rivingtonians Sports Club U9s",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-little-lever-2026-10-24",
+      "scheduledAt": "2026-10-24T09:00:00.000Z",
+      "opponent": "Little Lever Sports Club Junior U13 Tige",
+      "homeAway": "away",
+      "status": "scheduled",
+      "venue": "Little Lever Sports Club Junior U7 Tiger",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-daisy-hill-2026-11-07",
+      "scheduledAt": "2026-11-07T09:00:00.000Z",
+      "opponent": "Daisy Hill Junior U13 Pumas",
+      "homeAway": "home",
+      "status": "scheduled",
+      "venue": "Old Rivingtonians Sports Club U9s",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-north-walkden-2026-11-14",
+      "scheduledAt": "2026-11-14T09:00:00.000Z",
+      "opponent": "North Walkden U13 Falcons",
+      "homeAway": "away",
+      "status": "scheduled",
+      "venue": "North Walkden U7 Falcons",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-moss-bank-2026-11-28",
+      "scheduledAt": "2026-11-28T09:00:00.000Z",
+      "opponent": "Moss Bank Junior U13 Yellows",
+      "homeAway": "away",
+      "status": "scheduled",
+      "venue": "CHURCH ROAD PLAYING FIELDS",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-astley-2026-12-05",
+      "scheduledAt": "2026-12-05T09:00:00.000Z",
+      "opponent": "Astley & Tyldesley J.F.C. U13 Eagles",
+      "homeAway": "home",
+      "status": "scheduled",
+      "venue": "Old Rivingtonians Sports Club U9s",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-crompton-2026-12-12",
+      "scheduledAt": "2026-12-12T09:00:00.000Z",
+      "opponent": "Crompton FC Academy U13 Crompton Juniors",
+      "homeAway": "away",
+      "status": "scheduled",
+      "venue": "Crompton FC Academy U8",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-bolton-w-2026-12-19",
+      "scheduledAt": "2026-12-19T09:00:00.000Z",
+      "opponent": "Bolton Wyresdale U13 Bolton Wyresdale AF",
+      "homeAway": "home",
+      "status": "scheduled",
+      "venue": "Old Rivingtonians Sports Club U9s",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-oxford-grove-2027-01-09",
+      "scheduledAt": "2027-01-09T09:00:00.000Z",
+      "opponent": "Oxford Grove Junior U13 Tigers",
+      "homeAway": "away",
+      "status": "scheduled",
+      "venue": "Oxford Grove Junior U9 Tigers",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-abraham-moss-2027-01-16",
+      "scheduledAt": "2027-01-16T09:00:00.000Z",
+      "opponent": "Abraham Moss Warriors U13 Abraham Moss W",
+      "homeAway": "home",
+      "status": "scheduled",
+      "venue": "Old Rivingtonians Sports Club U9s",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-hindley-2027-01-23",
+      "scheduledAt": "2027-01-23T09:00:00.000Z",
+      "opponent": "Hindley Town U13 Barbarians",
+      "homeAway": "away",
+      "status": "scheduled",
+      "venue": "Hindley Town U9 Barbaians",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-little-lever-2027-01-30",
+      "scheduledAt": "2027-01-30T09:00:00.000Z",
+      "opponent": "Little Lever Sports Club Junior U13 Tige",
+      "homeAway": "home",
+      "status": "scheduled",
+      "venue": "Old Rivingtonians Sports Club U9s",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-daisy-hill-2027-02-06",
+      "scheduledAt": "2027-02-06T09:00:00.000Z",
+      "opponent": "Daisy Hill Junior U13 Pumas",
+      "homeAway": "away",
+      "status": "scheduled",
+      "venue": "Daisy Hill Junior U13 Pumas",
+      "competition": "U13 Section D"
+    },
+    {
+      "matchId": "fixture-north-walkden-2027-02-13",
+      "scheduledAt": "2027-02-13T09:00:00.000Z",
+      "opponent": "North Walkden U13 Falcons",
+      "homeAway": "home",
+      "status": "scheduled",
+      "venue": "Old Rivingtonians Sports Club U9s",
+      "competition": "U13 Section D"
+    }
+  ],
+  "standings": [
+    {
+      "position": 1,
+      "teamName": "Old Rivingtonians Sports Club U13 Old Ri",
+      "played": 5,
+      "won": 4,
+      "drawn": 0,
+      "lost": 1,
+      "points": 12,
+      "isUnder13s": true
+    },
+    {
+      "position": 2,
+      "teamName": "Moss Bank Junior U13 Yellows",
+      "played": 5,
+      "won": 2,
+      "drawn": 2,
+      "lost": 1,
+      "points": 8,
+      "isUnder13s": false
+    },
+    {
+      "position": 3,
+      "teamName": "Astley & Tyldesley J.F.C. U13 Eagles",
+      "played": 4,
+      "won": 2,
+      "drawn": 1,
+      "lost": 1,
+      "points": 7,
+      "isUnder13s": false
+    },
+    {
+      "position": 4,
+      "teamName": "Crompton FC Academy U13 Crompton Juniors",
+      "played": 4,
+      "won": 2,
+      "drawn": 1,
+      "lost": 1,
+      "points": 7,
+      "isUnder13s": false
+    },
+    {
+      "position": 5,
+      "teamName": "Hindley Town U13 Barbarians",
+      "played": 5,
+      "won": 2,
+      "drawn": 1,
+      "lost": 2,
+      "points": 7,
+      "isUnder13s": false
+    },
+    {
+      "position": 6,
+      "teamName": "North Walkden U13 Falcons",
+      "played": 5,
+      "won": 2,
+      "drawn": 1,
+      "lost": 2,
+      "points": 7,
+      "isUnder13s": false
+    },
+    {
+      "position": 7,
+      "teamName": "Bolton Wyresdale U13 Bolton Wyresdale AF",
+      "played": 4,
+      "won": 2,
+      "drawn": 0,
+      "lost": 2,
+      "points": 6,
+      "isUnder13s": false
+    },
+    {
+      "position": 8,
+      "teamName": "Oxford Grove Junior U13 Tigers",
+      "played": 4,
+      "won": 2,
+      "drawn": 0,
+      "lost": 2,
+      "points": 6,
+      "isUnder13s": false
+    },
+    {
+      "position": 9,
+      "teamName": "Little Lever Sports Club Junior U13 Tige",
+      "played": 5,
+      "won": 2,
+      "drawn": 0,
+      "lost": 3,
+      "points": 6,
+      "isUnder13s": false
+    },
+    {
+      "position": 10,
+      "teamName": "Abraham Moss Warriors U13 Abraham Moss W",
+      "played": 4,
+      "won": 0,
+      "drawn": 3,
+      "lost": 1,
+      "points": 3,
+      "isUnder13s": false
+    },
+    {
+      "position": 11,
+      "teamName": "Daisy Hill Junior U13 Pumas",
+      "played": 5,
+      "won": 0,
+      "drawn": 1,
+      "lost": 4,
+      "points": 1,
+      "isUnder13s": false
+    }
+  ],
+  "playerStatistics": [
+    {
+      "playerName": "Bailey",
+      "appearances": 6,
+      "goals": 0,
+      "assists": 0,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Luca",
+      "appearances": 6,
+      "goals": 0,
+      "assists": 2,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Reuben",
+      "appearances": 5,
+      "goals": 1,
+      "assists": 1,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Archie W",
+      "appearances": 5,
+      "goals": 2,
+      "assists": 0,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "George",
+      "appearances": 6,
+      "goals": 4,
+      "assists": 5,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Jimi",
+      "appearances": 6,
+      "goals": 1,
+      "assists": 2,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Kaydon",
+      "appearances": 6,
+      "goals": 5,
+      "assists": 0,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Jake",
+      "appearances": 5,
+      "goals": 2,
+      "assists": 1,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Hamish",
+      "appearances": 6,
+      "goals": 1,
+      "assists": 3,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Theo",
+      "appearances": 6,
+      "goals": 2,
+      "assists": 1,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Louie",
+      "appearances": 6,
+      "goals": 6,
+      "assists": 1,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Archie",
+      "appearances": 5,
+      "goals": 3,
+      "assists": 2,
+      "season": "2026/27"
+    }
+  ]
+}
