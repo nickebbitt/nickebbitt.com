@@ -71,7 +71,7 @@
           "scorer": "Louie"
         },
         {
-          "scorer": "Archie"
+          "scorer": "Archie H"
         },
         {
           "scorer": "Kaydon",
@@ -106,7 +106,7 @@
           "assist": "Theo"
         },
         {
-          "scorer": "Archie",
+          "scorer": "Archie H",
           "detail": "off the keeper"
         },
         {
@@ -114,21 +114,21 @@
         },
         {
           "scorer": "Archie W",
-          "assist": "Archie"
+          "assist": "Archie H"
         },
         {
           "scorer": "Archie W"
         },
         {
           "scorer": "Jake",
-          "assist": "Archie"
+          "assist": "Archie H"
         },
         {
-          "scorer": "Archie",
+          "scorer": "Archie H",
           "assist": "Hamish"
         }
       ],
-      "coachesPlayerOfTheMatch": "Luca, Archie",
+      "coachesPlayerOfTheMatch": "Luca, Archie H",
       "parentsPlayersOfTheMatch": [
         "Jimi"
       ]
@@ -226,7 +226,6 @@
       "opponent": "Hindley Town U13 Barbarians",
       "homeAway": "home",
       "status": "scheduled",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D"
     },
     {
@@ -244,7 +243,6 @@
       "opponent": "Daisy Hill Junior U13 Pumas",
       "homeAway": "home",
       "status": "scheduled",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D"
     },
     {
@@ -271,7 +269,6 @@
       "opponent": "Astley & Tyldesley J.F.C. U13 Eagles",
       "homeAway": "home",
       "status": "scheduled",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D"
     },
     {
@@ -289,7 +286,6 @@
       "opponent": "Bolton Wyresdale U13 Bolton Wyresdale AF",
       "homeAway": "home",
       "status": "scheduled",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D"
     },
     {
@@ -307,7 +303,6 @@
       "opponent": "Abraham Moss Warriors U13 Abraham Moss W",
       "homeAway": "home",
       "status": "scheduled",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D"
     },
     {
@@ -325,7 +320,6 @@
       "opponent": "Little Lever Sports Club Junior U13 Tige",
       "homeAway": "home",
       "status": "scheduled",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D"
     },
     {
@@ -343,7 +337,6 @@
       "opponent": "North Walkden U13 Falcons",
       "homeAway": "home",
       "status": "scheduled",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D"
     }
   ],
@@ -511,7 +504,7 @@
     },
     {
       "playerName": "Jake",
-      "appearances": 5,
+      "appearances": 6,
       "goals": 2,
       "assists": 1,
       "season": "2026/27"
@@ -538,8 +531,8 @@
       "season": "2026/27"
     },
     {
-      "playerName": "Archie",
-      "appearances": 5,
+      "playerName": "Archie H",
+      "appearances": 6,
       "goals": 3,
       "assists": 2,
       "season": "2026/27"

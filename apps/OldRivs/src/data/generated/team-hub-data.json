@@ -5,7 +5,7 @@
   },
   "source": {
     "sourceName": "Club-maintained local data",
-    "lastSuccessfulImportAt": "2026-10-11T16:37:50.646Z",
+    "lastSuccessfulImportAt": "2026-10-12T07:12:26.247Z",
     "status": "current"
   },
   "fixtures": [
@@ -22,7 +22,6 @@
       "id": "fixture-hindley-2026-10-17",
       "scheduledAt": "2026-10-17T09:00:00.000Z",
       "opponent": "Hindley Town U13 Barbarians",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D",
       "homeAway": "home",
       "status": "scheduled"
@@ -40,7 +39,6 @@
       "id": "fixture-daisy-hill-2026-11-07",
       "scheduledAt": "2026-11-07T09:00:00.000Z",
       "opponent": "Daisy Hill Junior U13 Pumas",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D",
       "homeAway": "home",
       "status": "scheduled"
@@ -67,7 +65,6 @@
       "id": "fixture-astley-2026-12-05",
       "scheduledAt": "2026-12-05T09:00:00.000Z",
       "opponent": "Astley & Tyldesley J.F.C. U13 Eagles",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D",
       "homeAway": "home",
       "status": "scheduled"
@@ -85,7 +82,6 @@
       "id": "fixture-bolton-w-2026-12-19",
       "scheduledAt": "2026-12-19T09:00:00.000Z",
       "opponent": "Bolton Wyresdale U13 Bolton Wyresdale AF",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D",
       "homeAway": "home",
       "status": "scheduled"
@@ -103,7 +99,6 @@
       "id": "fixture-abraham-moss-2027-01-16",
       "scheduledAt": "2027-01-16T09:00:00.000Z",
       "opponent": "Abraham Moss Warriors U13 Abraham Moss W",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D",
       "homeAway": "home",
       "status": "scheduled"
@@ -121,7 +116,6 @@
       "id": "fixture-little-lever-2027-01-30",
       "scheduledAt": "2027-01-30T09:00:00.000Z",
       "opponent": "Little Lever Sports Club Junior U13 Tige",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D",
       "homeAway": "home",
       "status": "scheduled"
@@ -139,7 +133,6 @@
       "id": "fixture-north-walkden-2027-02-13",
       "scheduledAt": "2027-02-13T09:00:00.000Z",
       "opponent": "North Walkden U13 Falcons",
-      "venue": "Old Rivingtonians Sports Club U9s",
       "competition": "U13 Section D",
       "homeAway": "home",
       "status": "scheduled"
@@ -206,7 +199,7 @@
           "scorer": "Louie"
         },
         {
-          "scorer": "Archie"
+          "scorer": "Archie H"
         },
         {
           "scorer": "Kaydon",
@@ -239,7 +232,7 @@
           "assist": "Theo"
         },
         {
-          "scorer": "Archie",
+          "scorer": "Archie H",
           "detail": "off the keeper"
         },
         {
@@ -247,21 +240,21 @@
         },
         {
           "scorer": "Archie W",
-          "assist": "Archie"
+          "assist": "Archie H"
         },
         {
           "scorer": "Archie W"
         },
         {
           "scorer": "Jake",
-          "assist": "Archie"
+          "assist": "Archie H"
         },
         {
-          "scorer": "Archie",
+          "scorer": "Archie H",
           "assist": "Hamish"
         }
       ],
-      "coachesPlayerOfTheMatch": "Luca, Archie",
+      "coachesPlayerOfTheMatch": "Luca, Archie H",
       "parentsPlayersOfTheMatch": [
         "Jimi"
       ],

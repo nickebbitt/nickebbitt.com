@@ -12,7 +12,7 @@ describe("PlayerStatsSection", () => {
     expect(screen.getByText("Bea")).toBeInTheDocument();
   });
 
-  it("sorts descending by the selected statistic, then appearances", () => {
+  it("shows only the selected statistic group and sorts it descending", () => {
     render(<PlayerStatsSection statistics={[
       { playerName: "Goals leader", appearances: 4, goals: 4, assists: 0, season: "2026" },
       { playerName: "Assist leader", appearances: 5, goals: 1, assists: 5, season: "2026" },
@@ -21,9 +21,13 @@ describe("PlayerStatsSection", () => {
     ]} />);
     const rows = () => screen.getAllByRole("row").slice(1).map((row) => row.textContent);
     expect(rows()[0]).toContain("Goals leader");
-    fireEvent.change(screen.getByLabelText("Order by"), { target: { value: "assists" } });
-    expect(rows()[0]).toContain("Assist leader");
-    expect(rows()[1]).toContain("More appearances");
-    expect(rows()[2]).toContain("Fewer appearances");
+    fireEvent.change(screen.getByLabelText("View"), { target: { value: "awards" } });
+    expect(screen.queryByRole("columnheader", { name: "Goals" })).not.toBeInTheDocument();
+    expect(screen.getByRole("columnheader", { name: /Coach's POTM/ })).toBeInTheDocument();
+    expect(rows()[0]).toContain("More appearances");
+    fireEvent.click(screen.getByRole("button", { name: "Appearances" }));
+    expect(rows()[0]).toContain("More appearances");
+    fireEvent.click(screen.getByRole("button", { name: /Appearances/ }));
+    expect(rows()[0]).toContain("Fewer appearances");
   });
 });

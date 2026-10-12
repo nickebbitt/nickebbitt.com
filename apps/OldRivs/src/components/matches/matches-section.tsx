@@ -26,11 +26,12 @@ export function MatchesSection({ fixtures, results }: { fixtures: Fixture[]; res
 
 function MatchCard({ match, expanded, onExpand }: { match: Match; expanded?: boolean; onExpand?: () => void }) {
   const isResult = match.kind === "result";
-  return <article className="match-card">
+  return <article className={`match-card ${isResult ? "match-card--result" : "match-card--fixture"}`}>
     <p className="match-label">{isResult ? "Latest result" : "Next match"}</p>
-    <strong>Old Rivingtonians U13 {isResult && match.status === "confirmed" ? `${match.teamScore} - ${match.opponentScore}` : "vs"} {match.opponent}</strong>
+    <strong>{match.opponent}</strong>
+    {isResult && match.status === "confirmed" && <span className="match-score">Result: {match.teamScore} - {match.opponentScore}</span>}
     <span>{new Date(match.date).toLocaleDateString(undefined, { dateStyle: "full" })}</span>
-    <span>{isResult ? match.status : `${match.homeAway === "home" ? "Home" : "Away"} · ${match.status}`}</span>
+    {!isResult && <span>{match.homeAway === "home" ? "Home" : "Away"}</span>}
     {!isResult && match.venue && <span>{match.venue}</span>}
     {isResult && match.goalContributions?.length ? <button className="expand-button match-expand" type="button" aria-expanded={expanded} onClick={onExpand}>
       {expanded ? "Hide match statistics" : "Show match statistics"}
