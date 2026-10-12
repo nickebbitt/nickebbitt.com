@@ -33,6 +33,8 @@ th, td { padding: .65rem; text-align: left; border-bottom: 1px solid #ddd; white
 .league-table th:first-child, .league-table td:first-child, .league-table th:nth-last-child(-n+2), .league-table td:nth-last-child(-n+2) { width: 3rem; text-align: center; }
 .league-table th:nth-child(2), .league-table td:nth-child(2) { white-space: normal; }
 .table-scroll-hint { margin-bottom: .5rem; color: #555; font-size: .875rem; }
+.stats-sort { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; }
+.stats-sort select { padding: .4rem; border: 1px solid #111; font: inherit; }
 .player-stats-wrap { -webkit-overflow-scrolling: touch; outline-offset: .15rem; }
 .player-stats-table { min-width: 36rem; }
 .player-stats-table th, .player-stats-table td { min-width: 6rem; text-align: center; }
