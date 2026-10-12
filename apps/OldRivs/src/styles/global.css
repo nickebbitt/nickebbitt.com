@@ -4,7 +4,7 @@ body { margin: 0; }
 .team-hub { max-width: 76rem; margin: auto; padding: 0 1.5rem 3rem; }
 .club-header { display: grid; justify-items: center; padding: 2rem 1rem; text-align: center; border-bottom: .45rem solid #e30613; background: #fff; }
 .club-crest { width: 5.5rem; height: 5.5rem; object-fit: contain; }
-h1 { margin: .25rem 0; font-size: clamp(2.4rem, 8vw, 4.5rem); letter-spacing: -.04em; text-transform: uppercase; }
+h1 { margin: .25rem 0; font-size: clamp(2.4rem, 8vw, 4.5rem); letter-spacing: -.04em; }
 h2 { margin: 2.4rem 0 1rem; color: #fff; background: #e30613; padding: .65rem 1rem; font-size: 1.1rem; letter-spacing: .07em; text-transform: uppercase; }
 section h2 { margin-top: 0; }
 .eyebrow { margin: 1rem 0 .25rem; color: #111; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }

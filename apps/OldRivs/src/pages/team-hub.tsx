@@ -18,7 +18,7 @@ export function TeamHub() {
   const [activeTab, setActiveTab] = useState<(typeof tabs)[number]["id"]>("matches");
   const data = snapshotSchema.parse(snapshot);
   const players = playerStatistics.map((player) => playerStatisticSchema.parse(player));
-  return <main className="team-hub"><header className="club-header"><img className="club-crest" src={clubCrest} alt="Old Rivingtonians Sports Club crest" /><p className="eyebrow">Old Rivingtonians Sports Club</p><h1>Under 13s</h1><p className="club-motto">Motivate. Inspire. Respect.</p><p>Fixtures, results, league standings, and player statistics.</p></header>
+  return <main className="team-hub"><header className="club-header"><img className="club-crest" src={clubCrest} alt="Old Rivingtonians Sports Club crest" /><p className="eyebrow">Old Rivingtonians Sports Club</p><h1>UNDER 13s</h1><p className="club-motto">Motivate. Inspire. Respect.</p><p>Fixtures, results, league standings, and player statistics.</p></header>
     <DataStatus status={data.source.status} message={data.source.statusMessage} updatedAt={data.source.lastSuccessfulImportAt} />
     <div className="tab-list" role="tablist" aria-label="Team information">
       {tabs.map((tab) => <button key={tab.id} id={`${tab.id}-tab`} className="tab-button" type="button" role="tab" aria-selected={activeTab === tab.id} aria-controls={`${tab.id}-panel`} onClick={() => setActiveTab(tab.id)}>{tab.label}</button>)}
