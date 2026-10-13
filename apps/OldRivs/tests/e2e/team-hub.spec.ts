@@ -6,6 +6,8 @@ test("shows the public team hub with club-maintained results and standings", asy
   await expect(page.getByText("Tiki Taka U13 Leverkusen")).toBeVisible();
   await page.getByRole("button", { name: "Show match statistics" }).click();
   await expect(page.getByText("Goal", { exact: true }).first()).toBeVisible();
+  await page.getByRole("button", { name: "View all results" }).click();
+  await expect(page.getByText("Moss Bank Junior U13 Yellows")).toBeVisible();
   await page.getByRole("tab", { name: "Table" }).click();
   await expect(page.getByRole("tab", { name: "Table", selected: true })).toBeVisible();
   await expect(page.getByText("Old Rivingtonians", { exact: true })).toBeVisible();
