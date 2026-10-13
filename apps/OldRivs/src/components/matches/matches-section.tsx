@@ -39,7 +39,7 @@ function MatchCard({ match, label, expanded, onExpand }: { match: Match; label?:
     <strong>{match.opponent}</strong>
     {isResult && match.status === "confirmed" && <span className="match-score">Result: {match.teamScore} - {match.opponentScore}</span>}
     <span>{new Date(match.date).toLocaleDateString(undefined, { dateStyle: "full" })}</span>
-    {!isResult && <span>{match.homeAway === "home" ? "Home" : "Away"}</span>}
+    <span>{match.homeAway === "home" ? "Home" : "Away"}</span>
     {!isResult && match.venue && <span>{match.venue}</span>}
     {isResult && match.goalContributions?.length ? <button className="expand-button match-expand" type="button" aria-expanded={expanded} onClick={onExpand}>
       {expanded ? "Hide match statistics" : "Show match statistics"}

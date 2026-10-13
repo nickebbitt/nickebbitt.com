@@ -23,6 +23,7 @@ export const resultSchema = z
     id: z.string().min(1),
     completedAt: z.string().date(),
     opponent: z.string().min(1),
+    homeAway: z.enum(["home", "away"]),
     teamScore: z.number().int().nonnegative().optional(),
     opponentScore: z.number().int().nonnegative().optional(),
     goalContributions: z.array(goalContributionSchema).optional(),

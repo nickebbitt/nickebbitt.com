@@ -5,7 +5,7 @@
   },
   "source": {
     "sourceName": "Club-maintained local data",
-    "lastSuccessfulImportAt": "2026-10-12T07:12:26.247Z",
+    "lastSuccessfulImportAt": "2026-10-13T14:55:42.194Z",
     "status": "current"
   },
   "fixtures": [
@@ -143,6 +143,7 @@
       "id": "result-moss-bank",
       "completedAt": "2026-09-05",
       "opponent": "Moss Bank Junior U13 Yellows",
+      "homeAway": "home",
       "teamScore": 4,
       "opponentScore": 2,
       "goalContributions": [
@@ -172,6 +173,7 @@
       "id": "result-at-eagles",
       "completedAt": "2026-09-12",
       "opponent": "Astley & Tyldesley J.F.C. U13 Eagles",
+      "homeAway": "home",
       "teamScore": 1,
       "opponentScore": 3,
       "goalContributions": [
@@ -189,6 +191,7 @@
       "id": "result-crompton",
       "completedAt": "2026-09-19",
       "opponent": "Crompton FC Academy U13 Crompton Juniors",
+      "homeAway": "home",
       "teamScore": 4,
       "opponentScore": 3,
       "goalContributions": [
@@ -216,6 +219,7 @@
       "id": "result-bolton-w",
       "completedAt": "2026-09-26",
       "opponent": "Bolton Wyresdale U13 Bolton Wyresdale AF",
+      "homeAway": "home",
       "teamScore": 9,
       "opponentScore": 0,
       "goalContributions": [
@@ -264,6 +268,7 @@
       "id": "result-oxford-grove",
       "completedAt": "2026-10-03",
       "opponent": "Oxford Grove Junior U13 Tigers",
+      "homeAway": "home",
       "teamScore": 5,
       "opponentScore": 2,
       "goalContributions": [
@@ -298,6 +303,7 @@
       "id": "fixture-tiki-taka-2026-10-10",
       "completedAt": "2026-10-10",
       "opponent": "Tiki Taka U13 Leverkusen",
+      "homeAway": "away",
       "teamScore": 6,
       "opponentScore": 1,
       "goalContributions": [

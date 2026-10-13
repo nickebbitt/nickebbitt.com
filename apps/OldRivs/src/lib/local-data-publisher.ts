@@ -30,7 +30,7 @@ export type LocalTeamUpdate = z.infer<typeof localUpdateSchema>;
 export function createPublishedLocalData(input: unknown): { snapshot: TeamHubSnapshot; playerStatistics: PlayerStatistic[] } {
   const update = localUpdateSchema.parse(input);
   const fixtures = update.matches.filter((item) => !["confirmed", "pending"].includes(item.status)).map((item) => fixtureSchema.parse({ id: item.matchId, scheduledAt: item.scheduledAt, opponent: item.opponent, homeAway: item.homeAway, status: item.status, venue: item.venue, competition: item.competition }));
-  const results = update.matches.filter((item) => ["confirmed", "pending"].includes(item.status)).map((item) => resultSchema.parse({ id: item.matchId, completedAt: item.completedAt, opponent: item.opponent, status: item.status, teamScore: item.teamScore, opponentScore: item.opponentScore, goalContributions: item.contributions, coachesPlayerOfTheMatch: item.coachesPlayerOfTheMatch, parentsPlayersOfTheMatch: item.parentsPlayersOfTheMatch }));
+  const results = update.matches.filter((item) => ["confirmed", "pending"].includes(item.status)).map((item) => resultSchema.parse({ id: item.matchId, completedAt: item.completedAt, opponent: item.opponent, homeAway: item.homeAway, status: item.status, teamScore: item.teamScore, opponentScore: item.opponentScore, goalContributions: item.contributions, coachesPlayerOfTheMatch: item.coachesPlayerOfTheMatch, parentsPlayersOfTheMatch: item.parentsPlayersOfTheMatch }));
   const awardTotals = new Map<string, { coaches: number; parents: number }>();
   for (const item of update.matches) {
     for (const name of item.coachesPlayerOfTheMatch?.split(",").map((value) => value.trim()) ?? []) {
