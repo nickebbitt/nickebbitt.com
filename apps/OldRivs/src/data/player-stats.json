@@ -1,7 +1,7 @@
 [
   {
     "playerName": "Bailey",
-    "appearances": 6,
+    "appearances": 7,
     "goals": 0,
     "assists": 0,
     "coachesPlayerOfTheMatchAwards": 1,
@@ -10,25 +10,25 @@
   },
   {
     "playerName": "Luca",
-    "appearances": 6,
+    "appearances": 7,
     "goals": 0,
-    "assists": 2,
+    "assists": 3,
     "coachesPlayerOfTheMatchAwards": 1,
     "parentsPlayerOfTheMatchAwards": 0,
     "season": "2026/27"
   },
   {
     "playerName": "Reuben",
-    "appearances": 5,
+    "appearances": 6,
     "goals": 1,
-    "assists": 1,
+    "assists": 2,
     "coachesPlayerOfTheMatchAwards": 0,
     "parentsPlayerOfTheMatchAwards": 2,
     "season": "2026/27"
   },
   {
     "playerName": "Archie W",
-    "appearances": 5,
+    "appearances": 6,
     "goals": 2,
     "assists": 0,
     "coachesPlayerOfTheMatchAwards": 2,
@@ -37,8 +37,8 @@
   },
   {
     "playerName": "George",
-    "appearances": 6,
-    "goals": 4,
+    "appearances": 7,
+    "goals": 5,
     "assists": 5,
     "coachesPlayerOfTheMatchAwards": 0,
     "parentsPlayerOfTheMatchAwards": 3,
@@ -46,17 +46,17 @@
   },
   {
     "playerName": "Jimi",
-    "appearances": 6,
+    "appearances": 7,
     "goals": 1,
-    "assists": 2,
+    "assists": 3,
     "coachesPlayerOfTheMatchAwards": 0,
     "parentsPlayerOfTheMatchAwards": 1,
     "season": "2026/27"
   },
   {
     "playerName": "Kaydon",
-    "appearances": 6,
-    "goals": 5,
+    "appearances": 7,
+    "goals": 6,
     "assists": 0,
     "coachesPlayerOfTheMatchAwards": 0,
     "parentsPlayerOfTheMatchAwards": 0,
@@ -64,20 +64,20 @@
   },
   {
     "playerName": "Jake",
-    "appearances": 6,
+    "appearances": 7,
     "goals": 2,
     "assists": 1,
-    "coachesPlayerOfTheMatchAwards": 0,
+    "coachesPlayerOfTheMatchAwards": 1,
     "parentsPlayerOfTheMatchAwards": 0,
     "season": "2026/27"
   },
   {
     "playerName": "Hamish",
-    "appearances": 6,
-    "goals": 1,
-    "assists": 3,
+    "appearances": 7,
+    "goals": 3,
+    "assists": 4,
     "coachesPlayerOfTheMatchAwards": 1,
-    "parentsPlayerOfTheMatchAwards": 0,
+    "parentsPlayerOfTheMatchAwards": 1,
     "season": "2026/27"
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "playerName": "Louie",
-    "appearances": 6,
+    "appearances": 7,
     "goals": 6,
     "assists": 1,
     "coachesPlayerOfTheMatchAwards": 0,

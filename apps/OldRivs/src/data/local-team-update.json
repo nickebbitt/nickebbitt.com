@@ -40,7 +40,7 @@
       "scheduledAt": "2026-09-12T09:00:00.000Z",
       "completedAt": "2026-09-12",
       "opponent": "Astley & Tyldesley J.F.C. U13 Eagles",
-      "homeAway": "home",
+      "homeAway": "away",
       "status": "confirmed",
       "teamScore": 1,
       "opponentScore": 3,
@@ -88,7 +88,7 @@
       "scheduledAt": "2026-09-26T09:00:00.000Z",
       "completedAt": "2026-09-26",
       "opponent": "Bolton Wyresdale U13 Bolton Wyresdale AF",
-      "homeAway": "home",
+      "homeAway": "away",
       "status": "confirmed",
       "teamScore": 9,
       "opponentScore": 0,
@@ -223,10 +223,35 @@
     {
       "matchId": "fixture-hindley-2026-10-17",
       "scheduledAt": "2026-10-17T09:00:00.000Z",
+      "completedAt": "2026-10-17",
       "opponent": "Hindley Town U13 Barbarians",
       "homeAway": "home",
-      "status": "scheduled",
-      "competition": "U13 Section D"
+      "status": "confirmed",
+      "teamScore": 4,
+      "opponentScore": 1,
+      "competition": "U13 Section D",
+      "contributions": [
+        {
+          "scorer": "Kaydon",
+          "assist": "Hamish"
+        },
+        {
+          "scorer": "Hamish",
+          "assist": "Reuben"
+        },
+        {
+          "scorer": "Hamish",
+          "assist": "Jimi"
+        },
+        {
+          "scorer": "George",
+          "assist": "Luca"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Jake",
+      "parentsPlayersOfTheMatch": [
+        "Hamish"
+      ]
     },
     {
       "matchId": "fixture-little-lever-2026-10-24",
@@ -455,65 +480,65 @@
   "playerStatistics": [
     {
       "playerName": "Bailey",
-      "appearances": 6,
+      "appearances": 7,
       "goals": 0,
       "assists": 0,
       "season": "2026/27"
     },
     {
       "playerName": "Luca",
-      "appearances": 6,
+      "appearances": 7,
       "goals": 0,
-      "assists": 2,
+      "assists": 3,
       "season": "2026/27"
     },
     {
       "playerName": "Reuben",
-      "appearances": 5,
+      "appearances": 6,
       "goals": 1,
-      "assists": 1,
+      "assists": 2,
       "season": "2026/27"
     },
     {
       "playerName": "Archie W",
-      "appearances": 5,
+      "appearances": 6,
       "goals": 2,
       "assists": 0,
       "season": "2026/27"
     },
     {
       "playerName": "George",
-      "appearances": 6,
-      "goals": 4,
+      "appearances": 7,
+      "goals": 5,
       "assists": 5,
       "season": "2026/27"
     },
     {
       "playerName": "Jimi",
-      "appearances": 6,
+      "appearances": 7,
       "goals": 1,
-      "assists": 2,
+      "assists": 3,
       "season": "2026/27"
     },
     {
       "playerName": "Kaydon",
-      "appearances": 6,
-      "goals": 5,
+      "appearances": 7,
+      "goals": 6,
       "assists": 0,
       "season": "2026/27"
     },
     {
       "playerName": "Jake",
-      "appearances": 6,
+      "appearances": 7,
       "goals": 2,
       "assists": 1,
       "season": "2026/27"
     },
     {
       "playerName": "Hamish",
-      "appearances": 6,
-      "goals": 1,
-      "assists": 3,
+      "appearances": 7,
+      "goals": 3,
+      "assists": 4,
       "season": "2026/27"
     },
     {
@@ -525,7 +550,7 @@
     },
     {
       "playerName": "Louie",
-      "appearances": 6,
+      "appearances": 7,
       "goals": 6,
       "assists": 1,
       "season": "2026/27"

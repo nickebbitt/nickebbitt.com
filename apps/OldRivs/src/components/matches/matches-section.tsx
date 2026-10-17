@@ -8,7 +8,7 @@ export function MatchesSection({ fixtures, results }: { fixtures: Fixture[]; res
   const now = new Date();
   const completedResults = results
     .map((result): Match => ({ ...result, kind: "result", date: result.completedAt }))
-    .filter((match) => new Date(`${match.date}T23:59:59`) < now)
+    .filter((match) => match.status === "confirmed")
     .sort((left, right) => right.date.localeCompare(left.date));
   const completed = completedResults[0];
   const next = fixtures

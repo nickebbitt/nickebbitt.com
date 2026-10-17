@@ -5,7 +5,7 @@
   },
   "source": {
     "sourceName": "Club-maintained local data",
-    "lastSuccessfulImportAt": "2026-10-13T14:55:42.194Z",
+    "lastSuccessfulImportAt": "2026-10-17T14:07:25.019Z",
     "status": "current"
   },
   "fixtures": [
@@ -17,14 +17,6 @@
       "competition": "U13 Section D",
       "homeAway": "away",
       "status": "postponed"
-    },
-    {
-      "id": "fixture-hindley-2026-10-17",
-      "scheduledAt": "2026-10-17T09:00:00.000Z",
-      "opponent": "Hindley Town U13 Barbarians",
-      "competition": "U13 Section D",
-      "homeAway": "home",
-      "status": "scheduled"
     },
     {
       "id": "fixture-little-lever-2026-10-24",
@@ -173,7 +165,7 @@
       "id": "result-at-eagles",
       "completedAt": "2026-09-12",
       "opponent": "Astley & Tyldesley J.F.C. U13 Eagles",
-      "homeAway": "home",
+      "homeAway": "away",
       "teamScore": 1,
       "opponentScore": 3,
       "goalContributions": [
@@ -219,7 +211,7 @@
       "id": "result-bolton-w",
       "completedAt": "2026-09-26",
       "opponent": "Bolton Wyresdale U13 Bolton Wyresdale AF",
-      "homeAway": "home",
+      "homeAway": "away",
       "teamScore": 9,
       "opponentScore": 0,
       "goalContributions": [
@@ -335,6 +327,37 @@
       "parentsPlayersOfTheMatch": [
         "Reuben",
         "George"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "fixture-hindley-2026-10-17",
+      "completedAt": "2026-10-17",
+      "opponent": "Hindley Town U13 Barbarians",
+      "homeAway": "home",
+      "teamScore": 4,
+      "opponentScore": 1,
+      "goalContributions": [
+        {
+          "scorer": "Kaydon",
+          "assist": "Hamish"
+        },
+        {
+          "scorer": "Hamish",
+          "assist": "Reuben"
+        },
+        {
+          "scorer": "Hamish",
+          "assist": "Jimi"
+        },
+        {
+          "scorer": "George",
+          "assist": "Luca"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Jake",
+      "parentsPlayersOfTheMatch": [
+        "Hamish"
       ],
       "status": "confirmed"
     }
