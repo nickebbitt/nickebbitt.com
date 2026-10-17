@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { MatchesSection } from "../../../src/components/matches/matches-section";
 
@@ -15,7 +15,13 @@ describe("MatchesSection", () => {
             homeAway: "home",
             status: "confirmed",
             teamScore: 4,
-            opponentScore: 1
+            opponentScore: 1,
+            goalContributions: [
+              {
+                scorer: "Kaydon",
+                assist: "Hamish"
+              }
+            ]
           }
         ]}
       />
@@ -23,5 +29,11 @@ describe("MatchesSection", () => {
 
     expect(screen.getByText("Hindley Town U13 Barbarians")).toBeInTheDocument();
     expect(screen.getByText("Result: 4 - 1")).toBeInTheDocument();
+    expect(screen.queryByText("Kaydon (Hamish)")).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "Show match details for Hindley Town U13 Barbarians" }));
+
+    expect(screen.getByText("Kaydon (Hamish)")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Hide match details for Hindley Town U13 Barbarians" })).toHaveAttribute("aria-expanded", "true");
   });
 });

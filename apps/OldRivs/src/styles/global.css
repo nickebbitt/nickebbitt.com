@@ -18,11 +18,15 @@ section > :not(h2) { margin-left: 1rem; margin-right: 1rem; }
 .match-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .results-history { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
 .match-card { display: grid; gap: .5rem; padding: 1rem; color: #fff; background: #111; border-left: .35rem solid #e30613; border-radius: .25rem; }
+.match-card--result { padding: 0; }
 .match-card--fixture { color: #111; background: #fff; border: 2px solid #111; border-left: .35rem solid #e30613; }
+.match-card__toggle { position: relative; display: grid; gap: .5rem; width: 100%; padding: 1rem 3rem 1rem 1rem; border: 0; color: inherit; background: transparent; font: inherit; text-align: left; cursor: pointer; }
+.match-card__toggle:hover, .match-card__toggle:focus-visible { background: #2b2b2b; outline: 2px solid #fff; outline-offset: -2px; }
+.match-card__indicator { position: absolute; top: 50%; right: 1rem; font-size: 1.25rem; font-weight: 800; transform: translateY(-50%); transition: transform .15s ease; }
+.match-card__indicator--expanded { transform: translateY(-50%) rotate(180deg); }
 .match-label { margin: 0; color: #fff; font-size: .8rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
 .match-card--fixture .match-label { color: #e30613; }
-.match-expand { margin: .5rem 0 0; justify-self: start; }
-.match-statistics { display: grid; gap: .35rem; margin: .5rem 0 0; padding-top: .75rem; border-top: 1px solid #777; }
+.match-statistics { display: grid; gap: .35rem; margin: 0 1rem 1rem; padding-top: .75rem; border-top: 1px solid #777; }
 .match-statistics div { display: grid; grid-template-columns: 4rem 1fr; gap: .5rem; }
 .match-statistics dt, .match-statistics dd { margin: 0; }
 .data-status { margin: 1.5rem 0; padding: .85rem 1rem; border-left: .35rem solid #111; background: #eee; font-weight: 700; }
