@@ -6,7 +6,22 @@ describe("MatchesSection", () => {
   it("shows a confirmed result immediately on its match day", () => {
     render(
       <MatchesSection
-        fixtures={[]}
+        fixtures={[
+          {
+            id: "next-fixture",
+            scheduledAt: "2099-10-24T09:00:00.000Z",
+            opponent: "Little Lever Sports Club Junior U13 Tigers",
+            homeAway: "away",
+            status: "scheduled"
+          },
+          {
+            id: "later-fixture",
+            scheduledAt: "2099-11-07T09:00:00.000Z",
+            opponent: "Daisy Hill Junior U13 Pumas",
+            homeAway: "home",
+            status: "scheduled"
+          }
+        ]}
         results={[
           {
             id: "hindley",
@@ -29,6 +44,8 @@ describe("MatchesSection", () => {
 
     expect(screen.getByText("Hindley Town U13 Barbarians")).toBeInTheDocument();
     expect(screen.getByText("Result: 4 - 1")).toBeInTheDocument();
+    expect(screen.getByText("Little Lever Sports Club Junior U13 Tigers")).toBeInTheDocument();
+    expect(screen.queryByText("Daisy Hill Junior U13 Pumas")).not.toBeInTheDocument();
     expect(screen.queryByText("Kaydon (Hamish)")).not.toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: "Show match details for Hindley Town U13 Barbarians" }));

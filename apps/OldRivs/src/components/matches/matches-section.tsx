@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { Fixture, Result } from "../../data/schema";
 
-type Match = ({ kind: "fixture"; date: string } & Fixture) | ({ kind: "result"; date: string } & Result);
+export type Match = ({ kind: "fixture"; date: string } & Fixture) | ({ kind: "result"; date: string } & Result);
 
 export function MatchesSection({ fixtures, results }: { fixtures: Fixture[]; results: Result[] }) {
   const [expandedMatch, setExpandedMatch] = useState<string>();
@@ -11,10 +11,11 @@ export function MatchesSection({ fixtures, results }: { fixtures: Fixture[]; res
     .filter((match) => match.status === "confirmed")
     .sort((left, right) => right.date.localeCompare(left.date));
   const completed = completedResults[0];
-  const next = fixtures
+  const upcomingFixtures = fixtures
     .map((fixture): Match => ({ ...fixture, kind: "fixture", date: fixture.scheduledAt }))
     .filter((match) => match.status === "scheduled" && new Date(match.date) >= now)
-    .sort((left, right) => left.date.localeCompare(right.date))[0];
+    .sort((left, right) => left.date.localeCompare(right.date));
+  const next = upcomingFixtures[0];
 
   return <section aria-labelledby="matches-heading">
     <h2 id="matches-heading">Matches</h2>
@@ -28,7 +29,7 @@ export function MatchesSection({ fixtures, results }: { fixtures: Fixture[]; res
   </section>;
 }
 
-function MatchCard({ match, label, expanded, onExpand }: { match: Match; label?: string | null; expanded?: boolean; onExpand?: () => void }) {
+export function MatchCard({ match, label, expanded, onExpand }: { match: Match; label?: string | null; expanded?: boolean; onExpand?: () => void }) {
   const isResult = match.kind === "result";
   const hasDetails = isResult && Boolean(match.goalContributions?.length || match.coachesPlayerOfTheMatch || match.parentsPlayersOfTheMatch?.length);
   const detailsId = `${match.id}-statistics`;

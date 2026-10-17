@@ -1,6 +1,7 @@
 import snapshot from "../data/generated/team-hub-data.json";
 import playerStatistics from "../data/player-stats.json";
 import { MatchesSection } from "../components/matches/matches-section";
+import { FixturesSection } from "../components/fixtures/fixtures-section";
 import { StandingsSection } from "../components/standings/standings-section";
 import { PlayerStatsSection } from "../components/player-stats/player-stats-section";
 import { DataStatus } from "../components/shared/data-status";
@@ -10,6 +11,7 @@ import clubCrest from "../assets/old-rivs-crest.png";
 
 const tabs = [
   { id: "matches", label: "Matches" },
+  { id: "fixtures", label: "Fixtures" },
   { id: "standings", label: "Table" },
   { id: "statistics", label: "Stats" }
 ] as const;
@@ -24,6 +26,7 @@ export function TeamHub() {
       {tabs.map((tab) => <button key={tab.id} id={`${tab.id}-tab`} className="tab-button" type="button" role="tab" aria-selected={activeTab === tab.id} aria-controls={`${tab.id}-panel`} onClick={() => setActiveTab(tab.id)}>{tab.label}</button>)}
     </div>
     <div id="matches-panel" role="tabpanel" aria-labelledby="matches-tab" hidden={activeTab !== "matches"}><MatchesSection fixtures={data.fixtures} results={data.results} /></div>
+    <div id="fixtures-panel" role="tabpanel" aria-labelledby="fixtures-tab" hidden={activeTab !== "fixtures"}><FixturesSection fixtures={data.fixtures} /></div>
     <div id="standings-panel" role="tabpanel" aria-labelledby="standings-tab" hidden={activeTab !== "standings"}><StandingsSection standings={data.standings} /></div>
     <div id="statistics-panel" role="tabpanel" aria-labelledby="statistics-tab" hidden={activeTab !== "statistics"}><PlayerStatsSection statistics={players} /></div>
     <footer>Match information is maintained by the club. Only approved aggregate player statistics are published.</footer>
