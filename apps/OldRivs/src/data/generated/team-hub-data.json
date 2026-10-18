@@ -5,7 +5,7 @@
   },
   "source": {
     "sourceName": "Club-maintained local data",
-    "lastSuccessfulImportAt": "2026-10-17T14:07:25.019Z",
+    "lastSuccessfulImportAt": "2026-10-18T14:35:43.698Z",
     "status": "current"
   },
   "fixtures": [
@@ -368,21 +368,21 @@
       {
         "position": 1,
         "teamName": "Old Rivingtonians Sports Club U13 Old Ri",
-        "played": 5,
-        "won": 4,
+        "played": 6,
+        "won": 5,
         "drawn": 0,
         "lost": 1,
-        "points": 12,
+        "points": 15,
         "isUnder13s": true
       },
       {
         "position": 2,
         "teamName": "Moss Bank Junior U13 Yellows",
-        "played": 5,
-        "won": 2,
+        "played": 6,
+        "won": 3,
         "drawn": 2,
         "lost": 1,
-        "points": 8,
+        "points": 11,
         "isUnder13s": false
       },
       {
@@ -408,26 +408,26 @@
       {
         "position": 5,
         "teamName": "Hindley Town U13 Barbarians",
-        "played": 5,
+        "played": 6,
         "won": 2,
         "drawn": 1,
-        "lost": 2,
+        "lost": 3,
         "points": 7,
         "isUnder13s": false
       },
       {
         "position": 6,
         "teamName": "North Walkden U13 Falcons",
-        "played": 5,
+        "played": 6,
         "won": 2,
         "drawn": 1,
-        "lost": 2,
+        "lost": 3,
         "points": 7,
         "isUnder13s": false
       },
       {
         "position": 7,
-        "teamName": "Bolton Wyresdale U13 Bolton Wyresdale AF",
+        "teamName": "Oxford Grove Junior U13 Tigers",
         "played": 4,
         "won": 2,
         "drawn": 0,
@@ -437,11 +437,11 @@
       },
       {
         "position": 8,
-        "teamName": "Oxford Grove Junior U13 Tigers",
-        "played": 4,
+        "teamName": "Bolton Wyresdale U13 Bolton Wyresdale AF",
+        "played": 5,
         "won": 2,
         "drawn": 0,
-        "lost": 2,
+        "lost": 3,
         "points": 6,
         "isUnder13s": false
       },
@@ -457,22 +457,22 @@
       },
       {
         "position": 10,
+        "teamName": "Daisy Hill Junior U13 Pumas",
+        "played": 6,
+        "won": 1,
+        "drawn": 1,
+        "lost": 4,
+        "points": 4,
+        "isUnder13s": false
+      },
+      {
+        "position": 11,
         "teamName": "Abraham Moss Warriors U13 Abraham Moss W",
         "played": 4,
         "won": 0,
         "drawn": 3,
         "lost": 1,
         "points": 3,
-        "isUnder13s": false
-      },
-      {
-        "position": 11,
-        "teamName": "Daisy Hill Junior U13 Pumas",
-        "played": 5,
-        "won": 0,
-        "drawn": 1,
-        "lost": 4,
-        "points": 1,
         "isUnder13s": false
       }
     ]
