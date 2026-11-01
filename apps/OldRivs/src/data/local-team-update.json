@@ -263,6 +263,39 @@
       "competition": "U13 Section D"
     },
     {
+      "matchId": "friendly-turton-tigers-2026-10-30",
+      "scheduledAt": "2026-10-30T09:00:00.000Z",
+      "completedAt": "2026-10-30",
+      "opponent": "Turton Tigers",
+      "homeAway": "home",
+      "status": "confirmed",
+      "teamScore": 4,
+      "opponentScore": 0,
+      "competition": "Friendly",
+      "contributions": [
+        {
+          "scorer": "George",
+          "assist": "Reuben"
+        },
+        {
+          "scorer": "Jimi",
+          "assist": "Theo"
+        },
+        {
+          "scorer": "Jake",
+          "assist": "George"
+        },
+        {
+          "scorer": "Archie H",
+          "assist": "Jake"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Archie H",
+      "parentsPlayersOfTheMatch": [
+        "Jimi"
+      ]
+    },
+    {
       "matchId": "fixture-daisy-hill-2026-11-07",
       "scheduledAt": "2026-11-07T09:00:00.000Z",
       "opponent": "Daisy Hill Junior U13 Pumas",
@@ -480,7 +513,7 @@
   "playerStatistics": [
     {
       "playerName": "Bailey",
-      "appearances": 7,
+      "appearances": 8,
       "goals": 0,
       "assists": 0,
       "season": "2026/27"
@@ -494,71 +527,71 @@
     },
     {
       "playerName": "Reuben",
-      "appearances": 6,
-      "goals": 1,
-      "assists": 2,
-      "season": "2026/27"
-    },
-    {
-      "playerName": "Archie W",
-      "appearances": 6,
-      "goals": 2,
-      "assists": 0,
-      "season": "2026/27"
-    },
-    {
-      "playerName": "George",
-      "appearances": 7,
-      "goals": 5,
-      "assists": 5,
-      "season": "2026/27"
-    },
-    {
-      "playerName": "Jimi",
       "appearances": 7,
       "goals": 1,
       "assists": 3,
       "season": "2026/27"
     },
     {
-      "playerName": "Kaydon",
+      "playerName": "Archie W",
       "appearances": 7,
+      "goals": 2,
+      "assists": 0,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "George",
+      "appearances": 8,
+      "goals": 6,
+      "assists": 6,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Jimi",
+      "appearances": 8,
+      "goals": 2,
+      "assists": 3,
+      "season": "2026/27"
+    },
+    {
+      "playerName": "Kaydon",
+      "appearances": 8,
       "goals": 6,
       "assists": 0,
       "season": "2026/27"
     },
     {
       "playerName": "Jake",
-      "appearances": 7,
-      "goals": 2,
-      "assists": 1,
+      "appearances": 8,
+      "goals": 3,
+      "assists": 2,
       "season": "2026/27"
     },
     {
       "playerName": "Hamish",
-      "appearances": 7,
+      "appearances": 8,
       "goals": 3,
       "assists": 4,
       "season": "2026/27"
     },
     {
       "playerName": "Theo",
-      "appearances": 6,
+      "appearances": 7,
       "goals": 2,
-      "assists": 1,
+      "assists": 2,
       "season": "2026/27"
     },
     {
       "playerName": "Louie",
-      "appearances": 7,
+      "appearances": 8,
       "goals": 6,
       "assists": 1,
       "season": "2026/27"
     },
     {
       "playerName": "Archie H",
-      "appearances": 6,
-      "goals": 3,
+      "appearances": 7,
+      "goals": 4,
       "assists": 2,
       "season": "2026/27"
     }

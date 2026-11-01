@@ -5,7 +5,7 @@
   },
   "source": {
     "sourceName": "Club-maintained local data",
-    "lastSuccessfulImportAt": "2026-10-18T14:35:43.698Z",
+    "lastSuccessfulImportAt": "2026-11-01T12:40:26.601Z",
     "status": "current"
   },
   "fixtures": [
@@ -358,6 +358,37 @@
       "coachesPlayerOfTheMatch": "Jake",
       "parentsPlayersOfTheMatch": [
         "Hamish"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "friendly-turton-tigers-2026-10-30",
+      "completedAt": "2026-10-30",
+      "opponent": "Turton Tigers",
+      "homeAway": "home",
+      "teamScore": 4,
+      "opponentScore": 0,
+      "goalContributions": [
+        {
+          "scorer": "George",
+          "assist": "Reuben"
+        },
+        {
+          "scorer": "Jimi",
+          "assist": "Theo"
+        },
+        {
+          "scorer": "Jake",
+          "assist": "George"
+        },
+        {
+          "scorer": "Archie H",
+          "assist": "Jake"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Archie H",
+      "parentsPlayersOfTheMatch": [
+        "Jimi"
       ],
       "status": "confirmed"
     }

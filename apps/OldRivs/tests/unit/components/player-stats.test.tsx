@@ -30,4 +30,17 @@ describe("PlayerStatsSection", () => {
     fireEvent.click(screen.getByRole("button", { name: /Appearances/ }));
     expect(rows()[0]).toContain("Fewer appearances");
   });
+
+  it("calculates and sorts goal involvement", () => {
+    render(<PlayerStatsSection statistics={[
+      { playerName: "Goals leader", appearances: 4, goals: 4, assists: 0, season: "2026" },
+      { playerName: "Involvement leader", appearances: 5, goals: 2, assists: 5, season: "2026" }
+    ]} />);
+
+    fireEvent.change(screen.getByLabelText("View"), { target: { value: "involvement" } });
+
+    expect(screen.getByRole("columnheader", { name: /Goal involvement/ })).toBeInTheDocument();
+    expect(screen.getAllByRole("row")[1]).toHaveTextContent("Involvement leader");
+    expect(screen.getAllByRole("row")[1]).toHaveTextContent("7");
+  });
 });

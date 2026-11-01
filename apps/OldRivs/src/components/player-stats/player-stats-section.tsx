@@ -16,11 +16,13 @@ export function PlayerStatsSection({ statistics }: { statistics: PlayerStatistic
   }, []);
   const viewFields = view === "attacking"
     ? [{ field: "goals" as const, label: "Goals" }, { field: "assists" as const, label: "Assists" }]
-    : [{ field: "coachesPlayerOfTheMatchAwards" as const, label: "Coach's POTM" }, { field: "parentsPlayerOfTheMatchAwards" as const, label: "Parent's POTM" }];
+    : view === "involvement"
+      ? [{ field: "goalInvolvements" as const, label: "Goal involvement" }]
+      : [{ field: "coachesPlayerOfTheMatchAwards" as const, label: "Coach's POTM" }, { field: "parentsPlayerOfTheMatchAwards" as const, label: "Parent's POTM" }];
   const visibleFields = compact ? allFields.filter(({ field }) => field === compactField) : viewFields;
   const sorted = [...statistics].sort((left, right) => {
     const direction = sort.direction === "descending" ? -1 : 1;
-    const difference = direction * (left[sort.field] - right[sort.field]);
+    const difference = direction * (statValue(left, sort.field) - statValue(right, sort.field));
     return difference || right.appearances - left.appearances || left.playerName.localeCompare(right.playerName);
   });
   const setSortField = (field: SortField) => setSort((current) => ({
@@ -29,19 +31,24 @@ export function PlayerStatsSection({ statistics }: { statistics: PlayerStatistic
   }));
   const sortLabel = (field: SortField) => sort.field === field ? sort.direction === "descending" ? " ↓" : " ↑" : "";
   return <section aria-labelledby="players-heading"><h2 id="players-heading">Player statistics</h2>
-    {sorted.length === 0 ? <p role="status">Player statistics have not been published.</p> : <>{compact ? <label className="stats-sort">Stat <select value={compactField} onChange={(event) => { const field = event.target.value as SortField; setCompactField(field); setSort({ field, direction: "descending" }); }}>{allFields.map(({ field, label }) => <option key={field} value={field}>{label}</option>)}</select></label> : <label className="stats-sort">View <select value={view} onChange={(event) => { const nextView = event.target.value as StatsView; setView(nextView); setSort({ field: nextView === "attacking" ? "goals" : "coachesPlayerOfTheMatchAwards", direction: "descending" }); }}><option value="attacking">Goals & assists</option><option value="awards">POTM awards</option></select></label>}<p className="table-scroll-hint">Tap a statistic heading to change its order.</p><div className="table-wrap player-stats-wrap"><table className="player-stats-table"><thead><tr><th>Player</th><th><button type="button" onClick={() => setSortField("appearances")}>Appearances{sortLabel("appearances")}</button></th>{visibleFields.map(({ field, label }) => <th key={field}><button type="button" onClick={() => setSortField(field)}>{label}{sortLabel(field)}</button></th>)}</tr></thead>
-      <tbody>{sorted.map((player) => <tr key={player.playerName}><td>{player.playerName}</td><td>{player.appearances}</td>{visibleFields.map(({ field }) => <td key={field}>{player[field]}</td>)}</tr>)}</tbody>
+    {sorted.length === 0 ? <p role="status">Player statistics have not been published.</p> : <>{compact ? <label className="stats-sort">Stat <select value={compactField} onChange={(event) => { const field = event.target.value as SortField; setCompactField(field); setSort({ field, direction: "descending" }); }}>{allFields.map(({ field, label }) => <option key={field} value={field}>{label}</option>)}</select></label> : <label className="stats-sort">View <select value={view} onChange={(event) => { const nextView = event.target.value as StatsView; setView(nextView); setSort({ field: nextView === "attacking" ? "goals" : nextView === "involvement" ? "goalInvolvements" : "coachesPlayerOfTheMatchAwards", direction: "descending" }); }}><option value="attacking">Goals & assists</option><option value="involvement">Goal involvement</option><option value="awards">POTM awards</option></select></label>}<p className="table-scroll-hint">Tap a statistic heading to change its order.</p><div className="table-wrap player-stats-wrap"><table className="player-stats-table"><thead><tr><th>Player</th><th><button type="button" onClick={() => setSortField("appearances")}>Appearances{sortLabel("appearances")}</button></th>{visibleFields.map(({ field, label }) => <th key={field}><button type="button" onClick={() => setSortField(field)}>{label}{sortLabel(field)}</button></th>)}</tr></thead>
+      <tbody>{sorted.map((player) => <tr key={player.playerName}><td>{player.playerName}</td><td>{player.appearances}</td>{visibleFields.map(({ field }) => <td key={field}>{statValue(player, field)}</td>)}</tr>)}</tbody>
     </table></div></>}
   </section>;
 }
 
-type StatsView = "attacking" | "awards";
-type SortField = "appearances" | "goals" | "assists" | "coachesPlayerOfTheMatchAwards" | "parentsPlayerOfTheMatchAwards";
+type StatsView = "attacking" | "involvement" | "awards";
+type SortField = "appearances" | "goals" | "assists" | "goalInvolvements" | "coachesPlayerOfTheMatchAwards" | "parentsPlayerOfTheMatchAwards";
 type Sort = { field: SortField; direction: "ascending" | "descending" };
 
 const allFields = [
   { field: "goals" as const, label: "Goals" },
   { field: "assists" as const, label: "Assists" },
+  { field: "goalInvolvements" as const, label: "Goal involvement" },
   { field: "coachesPlayerOfTheMatchAwards" as const, label: "Coach's POTM" },
   { field: "parentsPlayerOfTheMatchAwards" as const, label: "Parent's POTM" }
 ];
+
+function statValue(player: PlayerStatistic, field: SortField): number {
+  return field === "goalInvolvements" ? player.goals + player.assists : player[field];
+}
