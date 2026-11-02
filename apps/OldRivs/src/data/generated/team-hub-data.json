@@ -5,7 +5,7 @@
   },
   "source": {
     "sourceName": "Club-maintained local data",
-    "lastSuccessfulImportAt": "2026-11-01T12:40:26.601Z",
+    "lastSuccessfulImportAt": "2026-11-01T16:32:09.557Z",
     "status": "current"
   },
   "fixtures": [
@@ -296,6 +296,7 @@
       "completedAt": "2026-10-10",
       "opponent": "Tiki Taka U13 Leverkusen",
       "homeAway": "away",
+      "competition": "U13s Players Cup",
       "teamScore": 6,
       "opponentScore": 1,
       "goalContributions": [
@@ -335,6 +336,7 @@
       "completedAt": "2026-10-17",
       "opponent": "Hindley Town U13 Barbarians",
       "homeAway": "home",
+      "competition": "U13 Section D",
       "teamScore": 4,
       "opponentScore": 1,
       "goalContributions": [
@@ -366,6 +368,7 @@
       "completedAt": "2026-10-30",
       "opponent": "Turton Tigers",
       "homeAway": "home",
+      "competition": "Friendly",
       "teamScore": 4,
       "opponentScore": 0,
       "goalContributions": [

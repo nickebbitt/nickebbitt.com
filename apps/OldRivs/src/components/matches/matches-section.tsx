@@ -39,6 +39,7 @@ export function MatchCard({ match, label, expanded, onExpand }: { match: Match; 
     {isResult && match.status === "confirmed" && <span className="match-score">Result: {match.teamScore} - {match.opponentScore}</span>}
     <span>{new Date(match.date).toLocaleDateString(undefined, { dateStyle: "full" })}</span>
     <span>Location: {match.homeAway === "home" ? "Home" : "Away"}</span>
+    <span>Competition: {competitionType(match.competition)}</span>
     {!isResult && match.venue && <span>{match.venue}</span>}
   </>;
 
@@ -53,4 +54,11 @@ export function MatchCard({ match, label, expanded, onExpand }: { match: Match; 
       {match.parentsPlayersOfTheMatch && <div><dt>Parent's POTM</dt><dd>{match.parentsPlayersOfTheMatch.join(", ")}</dd></div>}
     </dl>}
   </article>;
+}
+
+function competitionType(competition: string | undefined): "League" | "Cup" | "Friendly" {
+  const normalized = competition?.toLowerCase();
+  if (normalized?.includes("friendly")) return "Friendly";
+  if (normalized?.includes("cup")) return "Cup";
+  return "League";
 }

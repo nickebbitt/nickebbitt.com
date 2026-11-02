@@ -44,6 +44,7 @@ describe("MatchesSection", () => {
 
     expect(screen.getByText("Hindley Town U13 Barbarians")).toBeInTheDocument();
     expect(screen.getByText("Result: 4 - 1")).toBeInTheDocument();
+    expect(screen.getByText("Hindley Town U13 Barbarians").closest("article")).toHaveTextContent("Competition: League");
     expect(screen.getByText("Little Lever Sports Club Junior U13 Tigers")).toBeInTheDocument();
     expect(screen.queryByText("Daisy Hill Junior U13 Pumas")).not.toBeInTheDocument();
     expect(screen.queryByText("Kaydon (Hamish)")).not.toBeInTheDocument();
@@ -52,5 +53,37 @@ describe("MatchesSection", () => {
 
     expect(screen.getByText("Kaydon (Hamish)")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Hide match details for Hindley Town U13 Barbarians" })).toHaveAttribute("aria-expanded", "true");
+  });
+
+  it("labels league, cup, and friendly matches", () => {
+    render(
+      <MatchesSection
+        fixtures={[
+          {
+            id: "cup-fixture",
+            scheduledAt: "2099-10-24T09:00:00.000Z",
+            opponent: "Cup opponents",
+            homeAway: "away",
+            status: "scheduled",
+            competition: "U13 Players Cup"
+          }
+        ]}
+        results={[
+          {
+            id: "friendly-result",
+            completedAt: "2099-10-17",
+            opponent: "Friendly opponents",
+            homeAway: "home",
+            status: "confirmed",
+            teamScore: 4,
+            opponentScore: 0,
+            competition: "Friendly"
+          }
+        ]}
+      />
+    );
+
+    expect(screen.getByText("Competition: Cup")).toBeInTheDocument();
+    expect(screen.getByText("Competition: Friendly")).toBeInTheDocument();
   });
 });
