@@ -43,4 +43,17 @@ describe("PlayerStatsSection", () => {
     expect(screen.getAllByRole("row")[1]).toHaveTextContent("Involvement leader");
     expect(screen.getAllByRole("row")[1]).toHaveTextContent("7");
   });
+
+  it("shows clean sheets in their own view", () => {
+    render(<PlayerStatsSection statistics={[
+      { playerName: "Bailey", appearances: 8, goals: 0, assists: 0, cleanSheets: 2, season: "2026" },
+      { playerName: "George", appearances: 8, goals: 6, assists: 6, season: "2026" }
+    ]} />);
+
+    fireEvent.change(screen.getByLabelText("View"), { target: { value: "cleanSheets" } });
+
+    expect(screen.getByRole("columnheader", { name: /Clean sheets/ })).toBeInTheDocument();
+    expect(screen.getAllByRole("row")[1]).toHaveTextContent("Bailey");
+    expect(screen.getAllByRole("row")[1]).toHaveTextContent("2");
+  });
 });

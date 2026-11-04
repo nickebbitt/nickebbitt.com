@@ -73,6 +73,7 @@ export const playerStatisticSchema = z.object({
   appearances: z.number().int().nonnegative(),
   goals: z.number().int().nonnegative(),
   assists: z.number().int().nonnegative(),
+  cleanSheets: z.number().int().nonnegative().default(0),
   coachesPlayerOfTheMatchAwards: z.number().int().nonnegative().default(0),
   parentsPlayerOfTheMatchAwards: z.number().int().nonnegative().default(0),
   season: z.string().min(1)

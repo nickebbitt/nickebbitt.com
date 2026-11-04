@@ -32,6 +32,7 @@ export function createPublishedLocalData(input: unknown): { snapshot: TeamHubSna
   const fixtures = update.matches.filter((item) => !["confirmed", "pending"].includes(item.status)).map((item) => fixtureSchema.parse({ id: item.matchId, scheduledAt: item.scheduledAt, opponent: item.opponent, homeAway: item.homeAway, status: item.status, venue: item.venue, competition: item.competition }));
   const results = update.matches.filter((item) => ["confirmed", "pending"].includes(item.status)).map((item) => resultSchema.parse({ id: item.matchId, completedAt: item.completedAt, opponent: item.opponent, homeAway: item.homeAway, competition: item.competition, status: item.status, teamScore: item.teamScore, opponentScore: item.opponentScore, goalContributions: item.contributions, coachesPlayerOfTheMatch: item.coachesPlayerOfTheMatch, parentsPlayersOfTheMatch: item.parentsPlayersOfTheMatch }));
   const awardTotals = new Map<string, { coaches: number; parents: number }>();
+  const baileyCleanSheets = update.matches.filter((item) => item.status === "confirmed" && item.opponentScore === 0).length;
   for (const item of update.matches) {
     for (const name of item.coachesPlayerOfTheMatch?.split(",").map((value) => value.trim()) ?? []) {
       awardTotals.set(name, { coaches: (awardTotals.get(name)?.coaches ?? 0) + 1, parents: awardTotals.get(name)?.parents ?? 0 });
@@ -42,6 +43,7 @@ export function createPublishedLocalData(input: unknown): { snapshot: TeamHubSna
   }
   const playerStatistics = update.playerStatistics.map((player) => ({
     ...player,
+    cleanSheets: player.playerName === "Bailey" ? baileyCleanSheets : 0,
     coachesPlayerOfTheMatchAwards: awardTotals.get(player.playerName)?.coaches ?? 0,
     parentsPlayerOfTheMatchAwards: awardTotals.get(player.playerName)?.parents ?? 0
   }));
