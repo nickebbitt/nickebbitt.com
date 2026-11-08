@@ -5,7 +5,7 @@
   },
   "source": {
     "sourceName": "Club-maintained local data",
-    "lastSuccessfulImportAt": "2026-11-08T17:55:21.546Z",
+    "lastSuccessfulImportAt": "2026-11-08T21:24:45.231Z",
     "status": "current"
   },
   "fixtures": [
@@ -435,46 +435,66 @@
       {
         "position": 1,
         "teamName": "Old Rivingtonians Sports Club U13 Old Ri",
-        "played": 6,
-        "won": 5,
+        "played": 7,
+        "won": 6,
         "drawn": 0,
         "lost": 1,
-        "points": 15,
+        "points": 18,
         "isUnder13s": true
       },
       {
         "position": 2,
         "teamName": "Moss Bank Junior U13 Yellows",
-        "played": 6,
+        "played": 7,
         "won": 3,
         "drawn": 2,
-        "lost": 1,
+        "lost": 2,
         "points": 11,
         "isUnder13s": false
       },
       {
         "position": 3,
         "teamName": "Astley & Tyldesley J.F.C. U13 Eagles",
-        "played": 4,
-        "won": 2,
+        "played": 5,
+        "won": 3,
         "drawn": 1,
         "lost": 1,
-        "points": 7,
+        "points": 10,
         "isUnder13s": false
       },
       {
         "position": 4,
-        "teamName": "Crompton FC Academy U13 Crompton Juniors",
-        "played": 4,
-        "won": 2,
+        "teamName": "Hindley Town U13 Barbarians",
+        "played": 7,
+        "won": 3,
         "drawn": 1,
-        "lost": 1,
-        "points": 7,
+        "lost": 3,
+        "points": 10,
         "isUnder13s": false
       },
       {
         "position": 5,
-        "teamName": "Hindley Town U13 Barbarians",
+        "teamName": "Oxford Grove Junior U13 Tigers",
+        "played": 5,
+        "won": 3,
+        "drawn": 0,
+        "lost": 2,
+        "points": 9,
+        "isUnder13s": false
+      },
+      {
+        "position": 6,
+        "teamName": "Abraham Moss Warriors U13 Abraham Moss W",
+        "played": 6,
+        "won": 2,
+        "drawn": 3,
+        "lost": 1,
+        "points": 9,
+        "isUnder13s": false
+      },
+      {
+        "position": 7,
+        "teamName": "Crompton FC Academy U13 Crompton Juniors",
         "played": 6,
         "won": 2,
         "drawn": 1,
@@ -483,7 +503,7 @@
         "isUnder13s": false
       },
       {
-        "position": 6,
+        "position": 8,
         "teamName": "North Walkden U13 Falcons",
         "played": 6,
         "won": 2,
@@ -493,53 +513,33 @@
         "isUnder13s": false
       },
       {
-        "position": 7,
-        "teamName": "Oxford Grove Junior U13 Tigers",
-        "played": 4,
-        "won": 2,
-        "drawn": 0,
-        "lost": 2,
-        "points": 6,
-        "isUnder13s": false
-      },
-      {
-        "position": 8,
-        "teamName": "Bolton Wyresdale U13 Bolton Wyresdale AF",
-        "played": 5,
-        "won": 2,
-        "drawn": 0,
-        "lost": 3,
-        "points": 6,
-        "isUnder13s": false
-      },
-      {
         "position": 9,
-        "teamName": "Little Lever Sports Club Junior U13 Tige",
-        "played": 5,
+        "teamName": "Bolton Wyresdale U13 Bolton Wyresdale AF",
+        "played": 6,
         "won": 2,
         "drawn": 0,
-        "lost": 3,
+        "lost": 4,
         "points": 6,
         "isUnder13s": false
       },
       {
         "position": 10,
-        "teamName": "Daisy Hill Junior U13 Pumas",
+        "teamName": "Little Lever Sports Club Junior U13 Tige",
         "played": 6,
-        "won": 1,
-        "drawn": 1,
+        "won": 2,
+        "drawn": 0,
         "lost": 4,
-        "points": 4,
+        "points": 6,
         "isUnder13s": false
       },
       {
         "position": 11,
-        "teamName": "Abraham Moss Warriors U13 Abraham Moss W",
-        "played": 4,
-        "won": 0,
-        "drawn": 3,
-        "lost": 1,
-        "points": 3,
+        "teamName": "Daisy Hill Junior U13 Pumas",
+        "played": 7,
+        "won": 1,
+        "drawn": 1,
+        "lost": 5,
+        "points": 4,
         "isUnder13s": false
       }
     ]
