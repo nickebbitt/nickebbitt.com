@@ -1,10 +1,10 @@
 [
   {
     "playerName": "Bailey",
-    "appearances": 8,
+    "appearances": 9,
     "goals": 0,
     "assists": 0,
-    "cleanSheets": 2,
+    "cleanSheets": 3,
     "coachesPlayerOfTheMatchAwards": 1,
     "parentsPlayerOfTheMatchAwards": 0,
     "season": "2026/27"
@@ -21,7 +21,7 @@
   },
   {
     "playerName": "Reuben",
-    "appearances": 7,
+    "appearances": 8,
     "goals": 1,
     "assists": 3,
     "cleanSheets": 0,
@@ -31,19 +31,19 @@
   },
   {
     "playerName": "Archie W",
-    "appearances": 7,
+    "appearances": 8,
     "goals": 2,
     "assists": 0,
     "cleanSheets": 0,
-    "coachesPlayerOfTheMatchAwards": 2,
+    "coachesPlayerOfTheMatchAwards": 3,
     "parentsPlayerOfTheMatchAwards": 0,
     "season": "2026/27"
   },
   {
     "playerName": "George",
-    "appearances": 8,
-    "goals": 6,
-    "assists": 6,
+    "appearances": 9,
+    "goals": 7,
+    "assists": 7,
     "cleanSheets": 0,
     "coachesPlayerOfTheMatchAwards": 0,
     "parentsPlayerOfTheMatchAwards": 3,
@@ -51,8 +51,8 @@
   },
   {
     "playerName": "Jimi",
-    "appearances": 8,
-    "goals": 2,
+    "appearances": 9,
+    "goals": 3,
     "assists": 3,
     "cleanSheets": 0,
     "coachesPlayerOfTheMatchAwards": 0,
@@ -61,9 +61,9 @@
   },
   {
     "playerName": "Kaydon",
-    "appearances": 8,
-    "goals": 6,
-    "assists": 0,
+    "appearances": 9,
+    "goals": 8,
+    "assists": 1,
     "cleanSheets": 0,
     "coachesPlayerOfTheMatchAwards": 0,
     "parentsPlayerOfTheMatchAwards": 0,
@@ -71,7 +71,7 @@
   },
   {
     "playerName": "Jake",
-    "appearances": 8,
+    "appearances": 9,
     "goals": 3,
     "assists": 2,
     "cleanSheets": 0,
@@ -81,12 +81,12 @@
   },
   {
     "playerName": "Hamish",
-    "appearances": 8,
-    "goals": 3,
+    "appearances": 9,
+    "goals": 5,
     "assists": 4,
     "cleanSheets": 0,
     "coachesPlayerOfTheMatchAwards": 1,
-    "parentsPlayerOfTheMatchAwards": 1,
+    "parentsPlayerOfTheMatchAwards": 2,
     "season": "2026/27"
   },
   {
@@ -101,9 +101,9 @@
   },
   {
     "playerName": "Louie",
-    "appearances": 8,
-    "goals": 6,
-    "assists": 1,
+    "appearances": 9,
+    "goals": 7,
+    "assists": 2,
     "cleanSheets": 0,
     "coachesPlayerOfTheMatchAwards": 0,
     "parentsPlayerOfTheMatchAwards": 1,
@@ -111,7 +111,7 @@
   },
   {
     "playerName": "Archie H",
-    "appearances": 7,
+    "appearances": 8,
     "goals": 4,
     "assists": 2,
     "cleanSheets": 0,
