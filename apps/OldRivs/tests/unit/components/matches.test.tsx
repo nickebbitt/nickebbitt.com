@@ -44,7 +44,7 @@ describe("MatchesSection", () => {
 
     expect(screen.getByText("Hindley Town U13 Barbarians")).toBeInTheDocument();
     expect(screen.getByText("Result: 4 - 1")).toBeInTheDocument();
-    expect(screen.getByText("Hindley Town U13 Barbarians").closest("article")).toHaveTextContent("Competition: League");
+    expect(screen.getByText("Hindley Town U13 Barbarians").closest("article")).toHaveTextContent("League");
     expect(screen.getByText("Little Lever Sports Club Junior U13 Tigers")).toBeInTheDocument();
     expect(screen.queryByText("Daisy Hill Junior U13 Pumas")).not.toBeInTheDocument();
     expect(screen.queryByText("Kaydon (Hamish)")).not.toBeInTheDocument();
@@ -83,7 +83,7 @@ describe("MatchesSection", () => {
       />
     );
 
-    expect(screen.getByText("Competition: Cup")).toBeInTheDocument();
-    expect(screen.getByText("Competition: Friendly")).toBeInTheDocument();
+    expect(screen.getByText("Cup", { exact: true })).toBeInTheDocument();
+    expect(screen.getByText("Friendly", { exact: true })).toBeInTheDocument();
   });
 });

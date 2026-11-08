@@ -33,13 +33,16 @@ export function MatchCard({ match, label, expanded, onExpand }: { match: Match; 
   const isResult = match.kind === "result";
   const hasDetails = isResult && Boolean(match.goalContributions?.length || match.coachesPlayerOfTheMatch || match.parentsPlayersOfTheMatch?.length);
   const detailsId = `${match.id}-statistics`;
+  const competition = competitionType(match.competition);
+  const location = match.homeAway === "home" ? "Home" : "Away";
+  const date = new Date(match.date).toLocaleDateString(undefined, { dateStyle: "full" });
   const summary = <>
     {label !== null && <p className="match-label">{label ?? (isResult ? "Latest result" : "Next match")}</p>}
     <strong>{match.opponent}</strong>
     {isResult && match.status === "confirmed" && <span className="match-score">Result: {match.teamScore} - {match.opponentScore}</span>}
-    <span>{new Date(match.date).toLocaleDateString(undefined, { dateStyle: "full" })}</span>
-    <span>Location: {match.homeAway === "home" ? "Home" : "Away"}</span>
-    <span>Competition: {competitionType(match.competition)}</span>
+    <span className="match-meta" aria-label={`Date: ${date}`}><span className="match-icon" aria-hidden="true">📅</span>{date}</span>
+    <span className="match-meta" aria-label={`Location: ${location}`}><span className="match-icon" aria-hidden="true">{match.homeAway === "home" ? "🏠" : "✈"}</span>{location}</span>
+    <span className="match-meta" aria-label={`Competition: ${competition}`}><span className="match-icon" aria-hidden="true">{competition === "League" ? "🏆" : competition === "Cup" ? "🥇" : "🤝"}</span>{competition}</span>
     {!isResult && match.venue && <span>{match.venue}</span>}
   </>;
 
@@ -49,9 +52,9 @@ export function MatchCard({ match, label, expanded, onExpand }: { match: Match; 
       <span className={`match-card__indicator${expanded ? " match-card__indicator--expanded" : ""}`} aria-hidden="true">v</span>
     </button> : summary}
     {isResult && expanded && <dl id={detailsId} className="match-statistics">
-      {match.goalContributions?.map((goal, index) => <div key={`${goal.scorer}-${index}`}><dt>Goal</dt><dd>{goal.scorer}{goal.assist ? ` (${goal.assist})` : ""}{goal.detail ? ` (${goal.detail})` : ""}</dd></div>)}
-      {match.coachesPlayerOfTheMatch && <div><dt>Coach's POTM</dt><dd>{match.coachesPlayerOfTheMatch}</dd></div>}
-      {match.parentsPlayersOfTheMatch && <div><dt>Parent's POTM</dt><dd>{match.parentsPlayersOfTheMatch.join(", ")}</dd></div>}
+      {match.goalContributions?.map((goal, index) => <div key={`${goal.scorer}-${index}`}><dt aria-label="Goal">⚽</dt><dd>{goal.scorer}{goal.assist ? ` (${goal.assist})` : ""}{goal.detail === "penalty" ? <span className="match-detail">PEN</span> : goal.detail ? ` (${goal.detail})` : ""}</dd></div>)}
+      {match.coachesPlayerOfTheMatch && <div><dt aria-label="Coach's POTM">🏅</dt><dd>{match.coachesPlayerOfTheMatch}</dd></div>}
+      {match.parentsPlayersOfTheMatch && <div><dt aria-label="Parent's POTM">⭐</dt><dd>{match.parentsPlayersOfTheMatch.join(", ")}</dd></div>}
     </dl>}
   </article>;
 }
