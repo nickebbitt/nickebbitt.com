@@ -340,11 +340,28 @@
     {
       "matchId": "fixture-north-walkden-2026-11-14",
       "scheduledAt": "2026-11-14T09:00:00.000Z",
+      "completedAt": "2026-11-14",
       "opponent": "North Walkden U13 Falcons",
       "homeAway": "away",
-      "status": "scheduled",
+      "status": "confirmed",
+      "teamScore": 2,
+      "opponentScore": 1,
       "venue": "North Walkden U7 Falcons",
-      "competition": "U13 Section D"
+      "competition": "U13 Section D",
+      "contributions": [
+        {
+          "scorer": "Reuben",
+          "assist": "Hamish"
+        },
+        {
+          "scorer": "George",
+          "assist": "Jake"
+        }
+      ],
+      "coachesPlayerOfTheMatch": "Kaydon",
+      "parentsPlayersOfTheMatch": [
+        "Reuben"
+      ]
     },
     {
       "matchId": "fixture-moss-bank-2026-11-28",
@@ -436,15 +453,35 @@
     {
       "position": 1,
       "teamName": "Old Rivingtonians Sports Club U13 Old Ri",
-      "played": 7,
-      "won": 6,
+      "played": 8,
+      "won": 7,
       "drawn": 0,
       "lost": 1,
-      "points": 18,
+      "points": 21,
       "isUnder13s": true
     },
     {
       "position": 2,
+      "teamName": "Astley & Tyldesley J.F.C. U13 Eagles",
+      "played": 6,
+      "won": 4,
+      "drawn": 1,
+      "lost": 1,
+      "points": 13,
+      "isUnder13s": false
+    },
+    {
+      "position": 3,
+      "teamName": "Hindley Town U13 Barbarians",
+      "played": 8,
+      "won": 4,
+      "drawn": 1,
+      "lost": 3,
+      "points": 13,
+      "isUnder13s": false
+    },
+    {
+      "position": 4,
       "teamName": "Moss Bank Junior U13 Yellows",
       "played": 7,
       "won": 3,
@@ -454,18 +491,8 @@
       "isUnder13s": false
     },
     {
-      "position": 3,
-      "teamName": "Astley & Tyldesley J.F.C. U13 Eagles",
-      "played": 5,
-      "won": 3,
-      "drawn": 1,
-      "lost": 1,
-      "points": 10,
-      "isUnder13s": false
-    },
-    {
-      "position": 4,
-      "teamName": "Hindley Town U13 Barbarians",
+      "position": 5,
+      "teamName": "Crompton FC Academy U13 Crompton Juniors",
       "played": 7,
       "won": 3,
       "drawn": 1,
@@ -474,7 +501,7 @@
       "isUnder13s": false
     },
     {
-      "position": 5,
+      "position": 6,
       "teamName": "Oxford Grove Junior U13 Tigers",
       "played": 5,
       "won": 3,
@@ -484,7 +511,7 @@
       "isUnder13s": false
     },
     {
-      "position": 6,
+      "position": 7,
       "teamName": "Abraham Moss Warriors U13 Abraham Moss W",
       "played": 6,
       "won": 2,
@@ -494,52 +521,42 @@
       "isUnder13s": false
     },
     {
-      "position": 7,
-      "teamName": "Crompton FC Academy U13 Crompton Juniors",
-      "played": 6,
-      "won": 2,
-      "drawn": 1,
-      "lost": 3,
-      "points": 7,
-      "isUnder13s": false
-    },
-    {
       "position": 8,
       "teamName": "North Walkden U13 Falcons",
-      "played": 6,
+      "played": 7,
       "won": 2,
       "drawn": 1,
-      "lost": 3,
+      "lost": 4,
       "points": 7,
       "isUnder13s": false
     },
     {
       "position": 9,
       "teamName": "Bolton Wyresdale U13 Bolton Wyresdale AF",
-      "played": 6,
+      "played": 7,
       "won": 2,
       "drawn": 0,
-      "lost": 4,
+      "lost": 5,
       "points": 6,
       "isUnder13s": false
     },
     {
       "position": 10,
       "teamName": "Little Lever Sports Club Junior U13 Tige",
-      "played": 6,
+      "played": 7,
       "won": 2,
       "drawn": 0,
-      "lost": 4,
+      "lost": 5,
       "points": 6,
       "isUnder13s": false
     },
     {
       "position": 11,
       "teamName": "Daisy Hill Junior U13 Pumas",
-      "played": 7,
+      "played": 8,
       "won": 1,
       "drawn": 1,
-      "lost": 5,
+      "lost": 6,
       "points": 4,
       "isUnder13s": false
     }
@@ -547,84 +564,84 @@
   "playerStatistics": [
     {
       "playerName": "Bailey",
-      "appearances": 9,
+      "appearances": 10,
       "goals": 0,
       "assists": 0,
       "season": "2026/27"
     },
     {
       "playerName": "Luca",
-      "appearances": 7,
+      "appearances": 8,
       "goals": 0,
       "assists": 3,
       "season": "2026/27"
     },
     {
       "playerName": "Reuben",
-      "appearances": 8,
-      "goals": 1,
+      "appearances": 9,
+      "goals": 2,
       "assists": 3,
       "season": "2026/27"
     },
     {
       "playerName": "Archie W",
-      "appearances": 8,
+      "appearances": 9,
       "goals": 2,
       "assists": 0,
       "season": "2026/27"
     },
     {
       "playerName": "George",
-      "appearances": 9,
-      "goals": 7,
+      "appearances": 10,
+      "goals": 8,
       "assists": 7,
       "season": "2026/27"
     },
     {
       "playerName": "Jimi",
-      "appearances": 9,
+      "appearances": 10,
       "goals": 3,
       "assists": 3,
       "season": "2026/27"
     },
     {
       "playerName": "Kaydon",
-      "appearances": 9,
+      "appearances": 10,
       "goals": 8,
       "assists": 1,
       "season": "2026/27"
     },
     {
       "playerName": "Jake",
-      "appearances": 9,
+      "appearances": 10,
       "goals": 3,
-      "assists": 2,
+      "assists": 3,
       "season": "2026/27"
     },
     {
       "playerName": "Hamish",
-      "appearances": 9,
+      "appearances": 10,
       "goals": 5,
-      "assists": 4,
+      "assists": 5,
       "season": "2026/27"
     },
     {
       "playerName": "Theo",
-      "appearances": 7,
+      "appearances": 8,
       "goals": 2,
       "assists": 2,
       "season": "2026/27"
     },
     {
       "playerName": "Louie",
-      "appearances": 9,
+      "appearances": 10,
       "goals": 7,
       "assists": 2,
       "season": "2026/27"
     },
     {
       "playerName": "Archie H",
-      "appearances": 8,
+      "appearances": 9,
       "goals": 4,
       "assists": 2,
       "season": "2026/27"
