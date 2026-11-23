@@ -36,10 +36,13 @@ export function MatchCard({ match, label, expanded, onExpand }: { match: Match; 
   const competition = competitionType(match.competition);
   const location = match.homeAway === "home" ? "Home" : "Away";
   const date = new Date(match.date).toLocaleDateString(undefined, { dateStyle: "full" });
+  const outcome = isResult && match.status === "confirmed" && match.teamScore !== undefined && match.opponentScore !== undefined
+    ? { result: match.teamScore > match.opponentScore ? "Won" : match.teamScore < match.opponentScore ? "Lost" : "Drew", score: `${match.teamScore}–${match.opponentScore}` }
+    : undefined;
   const summary = <>
     {label !== null && <p className="match-label">{label ?? (isResult ? "Latest result" : "Next match")}</p>}
     <strong>{match.opponent}</strong>
-    {isResult && match.status === "confirmed" && <span className="match-score">Result: {match.teamScore} - {match.opponentScore}</span>}
+    {outcome && <span className="match-score"><span className={`result-badge result-badge--${outcome.result.toLowerCase()}`} aria-hidden="true">{outcome.result[0]}</span>{outcome.result} {outcome.score}</span>}
     <span className="match-meta" aria-label={`Date: ${date}`}><span className="match-icon" aria-hidden="true">📅</span>{date}</span>
     <span className="match-meta" aria-label={`Location: ${location}`}><span className="match-icon" aria-hidden="true">{match.homeAway === "home" ? "🏠" : "✈"}</span>{location}</span>
     <span className="match-meta" aria-label={`Competition: ${competition}`}><span className="match-icon" aria-hidden="true">{competition === "League" ? "🏆" : competition === "Cup" ? "🥇" : "🤝"}</span>{competition}</span>
@@ -47,10 +50,14 @@ export function MatchCard({ match, label, expanded, onExpand }: { match: Match; 
   </>;
 
   return <article className={`match-card ${isResult ? "match-card--result" : "match-card--fixture"}`}>
-    {hasDetails ? <button className="match-card__toggle" type="button" aria-label={`${expanded ? "Hide" : "Show"} match details for ${match.opponent}`} aria-controls={detailsId} aria-expanded={expanded} onClick={onExpand}>
+    <div className="match-card__summary">
       {summary}
-      <span className={`match-card__indicator${expanded ? " match-card__indicator--expanded" : ""}`} aria-hidden="true">v</span>
-    </button> : summary}
+      {/* The button covers the summary so the whole card stays tappable, but screen readers still read the score and date as text. */}
+      {hasDetails && <button className="match-card__toggle" type="button" aria-controls={detailsId} aria-expanded={expanded} onClick={onExpand}>
+        <span className="visually-hidden">{`${expanded ? "Hide" : "Show"} match details for ${match.opponent}`}</span>
+        <span className={`match-card__indicator${expanded ? " match-card__indicator--expanded" : ""}`} aria-hidden="true">v</span>
+      </button>}
+    </div>
     {isResult && expanded && <dl id={detailsId} className="match-statistics">
       {match.goalContributions?.map((goal, index) => <div key={`${goal.scorer}-${index}`}><dt aria-label="Goal">⚽</dt><dd>{goal.scorer}{goal.assist ? ` (${goal.assist})` : ""}{goal.detail === "penalty" ? <span className="match-detail">PEN</span> : goal.detail ? ` (${goal.detail})` : ""}</dd></div>)}
       {match.coachesPlayerOfTheMatch && <div><dt aria-label="Coach's POTM">🏅</dt><dd>{match.coachesPlayerOfTheMatch}</dd></div>}

@@ -3,10 +3,10 @@ import { expect, test } from "@playwright/test";
 test("shows the public team hub with club-maintained results and standings", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "UNDER 13s" })).toBeVisible();
-  await expect(page.getByText("Tiki Taka U13 Leverkusen")).toBeVisible();
+  await expect(page.getByText("Tiki Taka U13 Leverkusen", { exact: true })).toBeVisible();
   await page.getByRole("article").filter({ hasText: "Latest result" }).getByRole("button", { name: /Show match details/ }).click();
   await expect(page.locator(".match-statistics dt").first()).toHaveAttribute("aria-label", "Goal");
-  await expect(page.getByLabel("All results").getByText("Moss Bank Junior U13 Yellows")).toBeVisible();
+  await expect(page.getByLabel("All results").getByText("Moss Bank Junior U13 Yellows", { exact: true })).toBeVisible();
   await page.getByRole("tab", { name: "Fixtures" }).click();
   await expect(page.getByRole("tab", { name: "Fixtures", selected: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Fixtures" })).toBeVisible();

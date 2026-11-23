@@ -27,7 +27,7 @@ const localUpdateSchema = z.object({
 
 export type LocalTeamUpdate = z.infer<typeof localUpdateSchema>;
 
-export function createPublishedLocalData(input: unknown): { snapshot: TeamHubSnapshot; playerStatistics: PlayerStatistic[] } {
+export function createPublishedLocalData(input: unknown, updatedAt = new Date()): { snapshot: TeamHubSnapshot; playerStatistics: PlayerStatistic[] } {
   const update = localUpdateSchema.parse(input);
   const fixtures = update.matches.filter((item) => !["confirmed", "pending"].includes(item.status)).map((item) => fixtureSchema.parse({ id: item.matchId, scheduledAt: item.scheduledAt, opponent: item.opponent, homeAway: item.homeAway, status: item.status, venue: item.venue, competition: item.competition }));
   const results = update.matches.filter((item) => ["confirmed", "pending"].includes(item.status)).map((item) => resultSchema.parse({ id: item.matchId, completedAt: item.completedAt, opponent: item.opponent, homeAway: item.homeAway, competition: item.competition, status: item.status, teamScore: item.teamScore, opponentScore: item.opponentScore, goalContributions: item.contributions, coachesPlayerOfTheMatch: item.coachesPlayerOfTheMatch, parentsPlayersOfTheMatch: item.parentsPlayersOfTheMatch }));
@@ -47,12 +47,12 @@ export function createPublishedLocalData(input: unknown): { snapshot: TeamHubSna
     coachesPlayerOfTheMatchAwards: awardTotals.get(player.playerName)?.coaches ?? 0,
     parentsPlayerOfTheMatchAwards: awardTotals.get(player.playerName)?.parents ?? 0
   }));
-  return { snapshot: snapshotSchema.parse({ team: update.team, source: { sourceName: "Club-maintained local data", lastSuccessfulImportAt: new Date().toISOString(), status: "current" }, fixtures, results, standings: { status: "current", entries: update.standings } }), playerStatistics };
+  return { snapshot: snapshotSchema.parse({ team: update.team, source: { sourceName: "Club-maintained local data", lastSuccessfulImportAt: updatedAt.toISOString(), status: "current" }, fixtures, results, standings: { status: "current", entries: update.standings } }), playerStatistics };
 }
 
-export async function publishLocalData(sourcePath: string, outputDirectory: string): Promise<void> {
+export async function publishLocalData(sourcePath: string, outputDirectory: string, updatedAt?: Date): Promise<void> {
   const source = JSON.parse(await readFile(sourcePath, "utf8"));
-  await publishAtomically(outputDirectory, createPublishedLocalData(source));
+  await publishAtomically(outputDirectory, createPublishedLocalData(source, updatedAt));
 }
 
 async function publishAtomically(outputDirectory: string, data: { snapshot: TeamHubSnapshot; playerStatistics: PlayerStatistic[] }): Promise<void> {

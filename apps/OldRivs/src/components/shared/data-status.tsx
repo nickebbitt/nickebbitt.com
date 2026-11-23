@@ -6,7 +6,7 @@ interface DataStatusProps {
 
 export function DataStatus({ status, message, updatedAt }: DataStatusProps) {
   if (status === "current") {
-    return updatedAt ? <p className="data-status">Last updated {new Date(updatedAt).toLocaleString()}</p> : null;
+    return updatedAt ? <p className="data-status">Last updated {new Date(updatedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</p> : null;
   }
   return <p className={`data-status data-status--${status}`} role="status">{message ?? "Information is currently unavailable."}</p>;
 }
